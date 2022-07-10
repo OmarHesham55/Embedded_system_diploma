@@ -1,0 +1,310 @@
+20:51:23 **** Incremental Build of configuration Debug for project Assignment12 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:3: error: expected ';' before 'printf'
+   printf("%d",sum);
+   ^~~~~~
+20:52:08 **** Incremental Build of configuration Debug for project Assignment12 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment12.exe main.o 
+Info: Nothing to build for Assignment12
+Info: Nothing to build for Assignment12
+Info: Nothing to build for Assignment12
+20:11:50 **** Rebuild of configuration Debug for project Assignment13 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment13.exe main.o 
+Info: Nothing to build for Assignment13
+20:12:21 **** Incremental Build of configuration Debug for project Assignment13 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment13.exe main.o 
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+20:12:42 **** Incremental Build of configuration Debug for project Assignment13 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment13.exe main.o 
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+20:13:16 **** Incremental Build of configuration Debug for project Assignment13 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment13.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Assignment13.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:13:35 **** Incremental Build of configuration Debug for project Assignment13 ****
+Info: Internal Builder is used for build
+gcc -o Assignment13.exe main.o 
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+01:00:41 **** Incremental Build of configuration Debug for project Assignment13 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment13.exe main.o 
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+01:04:45 **** Incremental Build of configuration Debug for project Assignment13 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment13.exe main.o 
+Info: Nothing to build for Assignment13
+01:10:46 **** Incremental Build of configuration Debug for project Assignment13 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment13.exe main.o 
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+01:12:46 **** Incremental Build of configuration Debug for project Assignment13 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment13.exe main.o 
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+01:13:32 **** Incremental Build of configuration Debug for project Assignment13 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment13.exe main.o 
+01:18:02 **** Rebuild of configuration Debug for project Assignment12 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment12.exe main.o 
+Info: Nothing to build for Assignment12
+01:22:25 **** Incremental Build of configuration Debug for project Assignment12 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment12.exe main.o 
+01:23:38 **** Incremental Build of configuration Debug for project Assignment13 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment13.exe main.o 
+Info: Nothing to build for Assignment13
+Info: Nothing to build for Assignment13
+01:24:15 **** Incremental Build of configuration Debug for project Assignment13 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment13.exe main.o 
+Info: Nothing to build for Assignment13
+02:06:33 **** Rebuild of configuration Debug for project Assignment14 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:19: warning: extra tokens at end of #include directive
+ #include "stdio.h";
+                   ^
+..\main.c: In function 'main':
+..\main.c:26:9: error: switch quantity not an integer
+  switch(sym){
+         ^~~
+..\main.c:27:2: error: case label does not reduce to an integer constant
+  case "+":{
+  ^~~~
+..\main.c:28:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("%d",x+y);
+            ^
+..\main.c:32:2: error: case label does not reduce to an integer constant
+  case "-":{
+  ^~~~
+..\main.c:33:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("%d",x-y);
+            ^
+..\main.c:37:2: error: case label does not reduce to an integer constant
+  case "*":{
+  ^~~~
+..\main.c:38:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("%d",x*y);
+            ^
+..\main.c:42:2: error: case label does not reduce to an integer constant
+  case "/":{
+  ^~~~
+..\main.c:43:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("%d",x/y);
+            ^
+..\main.c:13:7: warning: unused variable 'symbol' [-Wunused-variable]
+  char symbol;
+       ^~~~~~
+02:07:03 **** Incremental Build of configuration Debug for project Assignment14 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:19: warning: extra tokens at end of #include directive
+ #include "stdio.h";
+                   ^
+..\main.c: In function 'main':
+..\main.c:24:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'char *' [-Wformat=]
+  scanf("%f",&symbol);
+          ^
+..\main.c:27:2: error: case label does not reduce to an integer constant
+  case "+":{
+  ^~~~
+..\main.c:28:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("%d",x+y);
+            ^
+..\main.c:32:2: error: case label does not reduce to an integer constant
+  case "-":{
+  ^~~~
+..\main.c:33:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("%d",x-y);
+            ^
+..\main.c:37:2: error: case label does not reduce to an integer constant
+  case "*":{
+  ^~~~
+..\main.c:38:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("%d",x*y);
+            ^
+..\main.c:42:2: error: case label does not reduce to an integer constant
+  case "/":{
+  ^~~~
+..\main.c:43:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("%d",x/y);
+            ^
+02:07:15 **** Incremental Build of configuration Debug for project Assignment14 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:19: warning: extra tokens at end of #include directive
+ #include "stdio.h";
+                   ^
+..\main.c: In function 'main':
+..\main.c:24:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'char *' [-Wformat=]
+  scanf("%f",&symbol);
+          ^
+..\main.c:27:2: error: case label does not reduce to an integer constant
+  case "+":{
+  ^~~~
+..\main.c:32:2: error: case label does not reduce to an integer constant
+  case "-":{
+  ^~~~
+..\main.c:37:2: error: case label does not reduce to an integer constant
+  case "*":{
+  ^~~~
+..\main.c:42:2: error: case label does not reduce to an integer constant
+  case "/":{
+  ^~~~
+02:07:53 **** Incremental Build of configuration Debug for project Assignment14 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:19: warning: extra tokens at end of #include directive
+ #include "stdio.h";
+                   ^
+..\main.c: In function 'main':
+..\main.c:24:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'char *' [-Wformat=]
+  scanf("%f",&symbol);
+          ^
+..\main.c:27:8: error: expected expression before ':' token
+  case +:{
+        ^
+..\main.c:32:8: error: expected expression before ':' token
+  case -:{
+        ^
+..\main.c:37:8: error: expected expression before ':' token
+  case *:{
+        ^
+..\main.c:42:7: error: expected expression before '/' token
+  case /:{
+       ^
+..\main.c:42:7: error: expected expression before '/' token
+02:08:31 **** Incremental Build of configuration Debug for project Assignment14 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:19: warning: extra tokens at end of #include directive
+ #include "stdio.h";
+                   ^
+..\main.c: In function 'main':
+..\main.c:24:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'char *' [-Wformat=]
+  scanf("%f",&symbol);
+          ^
+..\main.c:27:8: error: expected expression before ':' token
+  case +:{
+        ^
+..\main.c:32:9: error: expected expression before ':' token
+  case - :
+         ^
+..\main.c:37:8: error: expected expression before ':' token
+  case *:{
+        ^
+..\main.c:42:7: error: expected expression before '/' token
+  case /:{
+       ^
+..\main.c:42:7: error: expected expression before '/' token
+02:08:51 **** Incremental Build of configuration Debug for project Assignment14 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:19: warning: extra tokens at end of #include directive
+ #include "stdio.h";
+                   ^
+gcc -o Assignment14.exe main.o 
+02:09:15 **** Incremental Build of configuration Debug for project Assignment14 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:19: warning: extra tokens at end of #include directive
+ #include "stdio.h";
+                   ^
+gcc -o Assignment14.exe main.o 
+Info: Nothing to build for Assignment14
+Info: Nothing to build for Assignment14
+02:10:33 **** Incremental Build of configuration Debug for project Assignment14 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:19: warning: extra tokens at end of #include directive
+ #include "stdio.h";
+                   ^
+..\main.c: In function 'main':
+..\main.c:26:11: warning: comparison between pointer and integer
+ if(symbol == "*"){
+           ^~
+..\main.c:26:11: warning: comparison with string literal results in unspecified behavior [-Waddress]
+gcc -o Assignment14.exe main.o 
+02:11:20 **** Incremental Build of configuration Debug for project Assignment14 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:19: warning: extra tokens at end of #include directive
+ #include "stdio.h";
+                   ^
+..\main.c: In function 'main':
+..\main.c:26:16: error: expected expression before ')' token
+  if(symbol == *){
+                ^
+02:11:35 **** Incremental Build of configuration Debug for project Assignment14 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:19: warning: extra tokens at end of #include directive
+ #include "stdio.h";
+                   ^
+gcc -o Assignment14.exe main.o 
+Info: Nothing to build for Assignment14
+Info: Nothing to build for Assignment14
+02:12:14 **** Incremental Build of configuration Debug for project Assignment14 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:19: warning: extra tokens at end of #include directive
+ #include "stdio.h";
+                   ^
+gcc -o Assignment14.exe main.o 
+Info: Nothing to build for Assignment14
+Info: Nothing to build for Assignment14
+Info: Nothing to build for Assignment14
+02:14:55 **** Incremental Build of configuration Debug for project Assignment14 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:19: warning: extra tokens at end of #include directive
+ #include "stdio.h";
+                   ^
+gcc -o Assignment14.exe main.o 
+Info: Nothing to build for Assignment14
+Info: Nothing to build for Assignment14
+Info: Nothing to build for Assignment14
+Info: Nothing to build for Assignment14
+Info: Nothing to build for Assignment14
+Info: Nothing to build for Assignment14
+02:16:04 **** Incremental Build of configuration Debug for project Assignment14 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment14.exe main.o 

@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 10, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h";
+
+int main(){
+	float x,y;
+	char symbol;
+	printf("Enter first number");
+	fflush(stdin); fflush(stdout);
+	scanf("%f",&x);
+
+	printf("Enter second number");
+	fflush(stdin); fflush(stdout);
+	scanf("%f",&y);
+
+	printf("Enter which calculation you want");
+	fflush(stdin); fflush(stdout);
+	scanf("%c",&symbol);
+
+	if(symbol == '*'){
+		printf("%c",symbol);
+	}
+
+}

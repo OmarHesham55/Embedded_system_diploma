@@ -1,0 +1,18 @@
+/*
+ * mian.c
+ *
+ *  Created on: Jul 8, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+	char character;
+	int Ascii;
+	printf("Enter the character\t");
+	fflush(stdin); fflush(stdout);
+
+
+}

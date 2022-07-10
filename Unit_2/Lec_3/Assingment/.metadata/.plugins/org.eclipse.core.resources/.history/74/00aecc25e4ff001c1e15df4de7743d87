@@ -1,0 +1,15 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 10, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h";
+
+int main(){
+	float x,y,sum;
+	char symbol;
+
+}

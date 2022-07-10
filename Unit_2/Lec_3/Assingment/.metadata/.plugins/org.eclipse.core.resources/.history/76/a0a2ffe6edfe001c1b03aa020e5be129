@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 8, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+	char x;
+	printf("Enter an integer");
+	fflush(stdin); fflush(stdout);
+	scanf("%c",&x);
+	for(int i = 0;i < x+1; i++){
+		printf("%c",x+=x);
+	}
+}

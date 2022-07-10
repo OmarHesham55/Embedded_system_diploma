@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 9, 2022
+ *      Author: omart
+ */
+
+#include "stdio.h"
+
+int main(){
+	unsigned int val ;
+	printf("Enter a positive integer..");
+	fflush(stdin); fflush(stdout);
+	scanf("%u \n",&val);
+	printf("%u",val);
+}
