@@ -1,0 +1,14 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 8, 2022
+ *      Author: omart
+ */
+
+#include "stdio.h"
+
+void main(){
+	printf("Enter three values you need to compare");
+	fflush("stdin"); fflush("stdout");
+
+}

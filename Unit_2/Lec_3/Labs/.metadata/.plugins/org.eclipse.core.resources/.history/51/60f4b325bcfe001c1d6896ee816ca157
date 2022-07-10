@@ -1,0 +1,20 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 8, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+	int x,y;
+
+	printf("enter two numbers.");
+//	fflush(stdin); fflush(stdout);
+//
+//	scanf("%d\n %d",&x,&y);
+//	printf("minimum number is:%d",(x>y)?x:y);
+
+}

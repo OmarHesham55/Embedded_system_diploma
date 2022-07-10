@@ -1,0 +1,26 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 5, 2022
+ *      Author: omart
+ */
+
+#include "stdio.h"
+
+void main(){
+	float r,sol;
+	char choice;
+
+	printf("Enter the radius of the circle..\t");
+	scanf("%f",&r);
+	printf("Enter \"A\" to calculate Area or \"C\" to Calculate Circumference.\t");
+	scanf("%c",&choice);
+
+	if(choice == 'A' || choice == 'a'){
+		sol = 3.14*r*r;
+	}else if(choice == 'C' || choice == 'c'){
+		sol = 2*3.14*r;
+	}else{
+		printf("Enter a correct choice");
+	}
+}

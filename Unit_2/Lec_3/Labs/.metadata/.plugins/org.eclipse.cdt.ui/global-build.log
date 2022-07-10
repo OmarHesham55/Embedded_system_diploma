@@ -1,0 +1,25 @@
+15:18:01 **** Incremental Build of configuration Debug for project lab4 ****
+Info: Internal Builder is used for build
+gcc -o lab4.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file lab4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:18:38 **** Incremental Build of configuration Debug for project lab4 ****
+Info: Internal Builder is used for build
+gcc -o lab4.exe main.o 
+Info: Nothing to build for lab4
+15:23:02 **** Incremental Build of configuration Debug for project lab4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:24:12: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+    scanf("%d",&degree);
+            ^
+..\main.c:28:33: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("average summation is:%d",summation/students);
+                                 ^
+gcc -o lab4.exe main.o 
+15:23:33 **** Incremental Build of configuration Debug for project lab4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab4.exe main.o 
+Info: Nothing to build for lab4

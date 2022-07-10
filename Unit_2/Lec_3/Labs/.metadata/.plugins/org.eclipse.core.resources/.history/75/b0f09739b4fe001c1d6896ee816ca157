@@ -1,0 +1,11 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 8, 2022
+ *      Author: omart
+ */
+
+#inlcude "stdio.h"
+void main(){
+	printf("Enter three values you need to compare");
+}

@@ -1,0 +1,34 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 8, 2022
+ *      Author: omart
+ */
+
+#include "stdio.h"
+
+int main(){
+
+	int x,y,z;
+
+	printf("Enter three values you need to compare");
+	fflush(stdin); fflush(stdout);
+	scanf("num1: %d, num2: %d, num3: %d",&x, &y, &z);
+
+	if(x>y){
+		if(x>z){
+			printf("X is the largest value");
+		}else{
+			printf("Z is the largest value");
+		}
+	}else{
+		if(y>z){
+			printf("Y is the largest value");
+		}else{
+			printf("Z is the largest value");
+		}
+	}
+
+
+
+}
