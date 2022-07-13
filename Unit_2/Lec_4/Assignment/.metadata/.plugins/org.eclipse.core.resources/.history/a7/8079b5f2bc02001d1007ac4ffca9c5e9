@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 13, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+	char arr[100],i,counter;
+
+	printf("Enter a string: ");
+	fflush(stdin); fflush(stdout);
+
+}

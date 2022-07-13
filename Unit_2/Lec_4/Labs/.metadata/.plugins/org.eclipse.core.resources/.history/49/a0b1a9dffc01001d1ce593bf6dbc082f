@@ -1,0 +1,29 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 12, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+
+	float degree[5];
+	int i, no;
+
+	printf("Enter number of students");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&no);
+
+	for(i=0; i<no; i++){
+		printf("Enter the degree of student %d: ",i+1);
+		fflush(stdin); fflush(stdout);
+		scanf("%f",&degree[i]);
+	}
+
+
+	for(i=0; i<5; i++){
+		printf("degree of student number %d is: %f\n", i+1,degree[i]);
+	}

@@ -1,0 +1,29 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 13, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+	int arr[100],ele,i,NO,LOC;
+
+	printf("Enter the No. of elements: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&ele);
+
+	for(i=0; i<ele; i++){
+		printf("%d ",arr[i]);
+	}
+
+	printf("\nEnter the No. to be inserted and the Location:\n");
+	fflush(stdin); fflush(stdout);
+	scanf("%d %d",&NO,&LOC);
+
+	printf("%d\t%d", NO,LOC);
+
+
+}

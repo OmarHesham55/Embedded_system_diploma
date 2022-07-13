@@ -1,0 +1,44 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 13, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+
+	float arr[][];
+	int r,c,i,j;
+
+	printf("Enter the rows of the matrix: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&r);
+
+	printf("\nEnter the columns of the matrix: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&c);
+
+
+	printf("Enter the values of the matrix");
+
+	for(i=0; i<r; i++){
+		for(j=0;j<c;j++){
+			printf("M%d%d: ",i+1,j+1);
+			fflush(stdin); fflush(stdout);
+			scanf("%f",&arr[i][j]);
+		}
+	}
+	printf("\n\n");
+
+	for(i=0; i<r; i++){
+		for(j=0;j<c;j++){
+			printf("%f",arr[i][j]);
+			if(j == c-1){
+				printf("\n");
+			}
+		}
+	}
+}

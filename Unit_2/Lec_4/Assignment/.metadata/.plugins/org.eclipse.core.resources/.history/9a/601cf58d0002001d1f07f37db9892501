@@ -1,0 +1,52 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 12, 2022
+ *      Author: omart
+ */
+
+
+#include"stdio.h"
+
+ int main(){
+
+	 float matrix1[2][2];
+	 float matrix2[2][2];	 for(i=0; i<2; i++){
+		 for(j=0; j<2; j++){
+			printf("M%d%d", i,j);
+			fflush(stdin); fflush(stdout);
+			scanf("%f",&matrix1[i][j]);
+		 }
+	 }
+	 int i,j;
+
+	 printf("Enter the values of the matrix1\n");
+
+	 	 	 //matrix1 inputs
+	 for(i=0; i<2; i++){
+		 for(j=0; j<2; j++){
+			printf("M%d%d", i,j);
+			fflush(stdin); fflush(stdout);
+			scanf("%f",&matrix1[i][j]);
+		 }
+	 }
+
+	 // to print the values
+	 /*
+	 for(i=0; i<2; i++){
+		 for(j=0; j<2; j++){
+			printf("M%d%d = %f\t", i,j,matrix1[i][j]);
+
+		 }
+	 }
+	 */
+	 	 //matrix2 inputs
+	 for(i=0; i<2; i++){
+		 for(j=0; j<2; j++){
+			printf("M%d%d", i,j);
+			fflush(stdin); fflush(stdout);
+			scanf("%f",&matrix2[i][j]);
+		 }
+	 }
+
+ }

@@ -1,0 +1,69 @@
+18:16:04 **** Incremental Build of configuration Debug for project Assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment1.exe main.o 
+Info: Nothing to build for Assignment1
+18:16:43 **** Incremental Build of configuration Debug for project Assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment1.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Assignment1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:17:01 **** Incremental Build of configuration Debug for project Assignment1 ****
+Info: Internal Builder is used for build
+gcc -o Assignment1.exe main.o 
+Info: Nothing to build for Assignment1
+18:17:20 **** Incremental Build of configuration Debug for project Assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:29:1: error: expected ';' before '}' token
+ }
+ ^
+18:17:24 **** Incremental Build of configuration Debug for project Assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:29:1: error: expected ';' before '}' token
+ }
+ ^
+18:17:26 **** Incremental Build of configuration Debug for project Assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment1.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Assignment1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:17:28 **** Incremental Build of configuration Debug for project Assignment1 ****
+Info: Internal Builder is used for build
+gcc -o Assignment1.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Assignment1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:17:31 **** Incremental Build of configuration Debug for project Assignment1 ****
+Info: Internal Builder is used for build
+gcc -o Assignment1.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Assignment1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:17:43 **** Incremental Build of configuration Debug for project Assignment1 ****
+Info: Internal Builder is used for build
+gcc -o Assignment1.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Assignment1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:17:45 **** Incremental Build of configuration Debug for project Assignment1 ****
+Info: Internal Builder is used for build
+gcc -o Assignment1.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Assignment1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:17:49 **** Incremental Build of configuration Debug for project Assignment1 ****
+Info: Internal Builder is used for build
+gcc -o Assignment1.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Assignment1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:18:03 **** Incremental Build of configuration Debug for project Assignment1 ****
+Info: Internal Builder is used for build
+gcc -o Assignment1.exe main.o 
+Info: Nothing to build for Assignment1
+18:18:18 **** Incremental Build of configuration Debug for project Assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Assignment1.exe main.o 
+Info: Nothing to build for Assignment1

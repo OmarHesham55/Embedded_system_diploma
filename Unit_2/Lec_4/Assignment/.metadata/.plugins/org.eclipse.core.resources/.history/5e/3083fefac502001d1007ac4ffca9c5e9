@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 13, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+#include "string.h"
+
+int main(){
+	char str[50];
+	short i;
+
+	printf("Enter a statement: ");
+	fflush(stdin); fflush(stdout);
+	gets(str);
+
+	printf("\nyou wrote: \'%d\'\n",strlen(str));
+
+//	for(i=strlen(str); i>strlen(str); i--){
+//		printf("reversed statement is: \'%c\'", str[i]);
+//	}
+}

@@ -1,0 +1,20 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 13, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+	char str[100],i,counter;
+
+	printf("Enter a string: ");
+	fflush(stdin); fflush(stdout);
+	gets(str);
+	printf("the statement is: \'%s\',",str);
+
+	for(i=0; i<strlen(str))
+}

@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 12, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+
+	float arr[];
+	int ele,i,j;
+
+	printf("Enter the number of elements");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&ele);
+
+	for()
+}

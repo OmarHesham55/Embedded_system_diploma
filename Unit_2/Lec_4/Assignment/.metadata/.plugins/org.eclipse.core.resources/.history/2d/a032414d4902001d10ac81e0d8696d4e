@@ -1,0 +1,18 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 13, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+	int ele,arr[50],i;
+
+	printf("Enter the num of elemetns: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&ele);
+
+}

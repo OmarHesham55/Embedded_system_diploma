@@ -1,0 +1,38 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 13, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+	int ele,arr[50],i,Snum;
+
+	printf("Enter the num of elements: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&ele);
+
+	for(i=0; i<ele; i++){
+		printf("element %d: ",i+1);
+		fflush(stdin); fflush(stdout);
+		scanf("%d",&arr[i]);
+	}
+
+	printf("Enter the num to search in elements: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&Snum);
+
+	for(i=0; i<ele; i++){
+		if(arr[i] == Snum){
+			printf("the number is founded at the location:%d ", i-1);
+			break;
+		}else{
+			printf("the number didn't found");
+			break;
+		}
+
+	}
+}

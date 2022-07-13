@@ -1,0 +1,24 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 13, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+
+	float arr1[];
+	int r,c,i;
+
+	printf("Enter the rows of the matrix: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&r);
+
+	printf("\nEnter the columns of the matrix: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&c);
+
+}

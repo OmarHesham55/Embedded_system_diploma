@@ -1,0 +1,38 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 13, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+	int arr[100],ele,i,num,index,val=1;
+
+
+	printf("Enter the No. of elements: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&ele);
+
+	for(i=0; i<ele; i++){
+		arr[i] = val;
+				val++;
+		printf("%d ",arr[i]);
+	}
+
+	printf("\nEnter the No. to be inserted and the Location:\n");
+	fflush(stdin); fflush(stdout);
+	scanf("%d %d",&num,&index);
+
+for(i=ele-1; i>=index-1; i--){
+	arr[i+1] = arr[i];
+}
+
+arr[index-1] = val;
+
+printf("final array after inserting the value is\n");
+for(i=0;i<=ele;i++)
+   printf("%d",arr[i]);
+}
