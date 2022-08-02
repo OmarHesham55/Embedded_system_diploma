@@ -1,0 +1,38 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 28, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+	int func1(int num1,int num2){
+
+		int i;
+
+
+		if(num1<num2){
+			for(i=num1;i<num2;i++){
+				if(i%2 != 0){
+					printf("%d ",i);
+				}
+			}
+		}else{
+			for(i=num2;i<num1;i++){
+				if(i%2 != 0 ){
+					printf("%d ",i);
+				}
+			}
+		}
+		return i;
+	}
+
+int main(){
+	int x,y;
+	printf("Enter two numbers: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d %d",&x ,&y);
+	func1(x,y);
+}

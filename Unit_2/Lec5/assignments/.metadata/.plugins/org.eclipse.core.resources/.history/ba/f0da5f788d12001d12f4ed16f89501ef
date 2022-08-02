@@ -1,0 +1,23 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 2, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+//char reverseSentence(char sentence[],int n){
+//
+//
+//}
+
+int main(){
+	char senctence[50];
+	int i,count;
+
+	printf("Enter a sentence:");
+	fflush(stdin);fflush(stdout);
+	getchar()
+}

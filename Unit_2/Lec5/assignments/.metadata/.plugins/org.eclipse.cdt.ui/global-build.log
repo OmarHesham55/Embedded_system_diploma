@@ -1,0 +1,400 @@
+19:57:06 **** Clean-only build of configuration Debug for project test ****
+rm -rf test.exe main.o main.d 
+20:03:55 **** Rebuild of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:8: warning: unused variable 'count' [-Wunused-variable]
+  int i,count;
+        ^~~~~
+..\main.c:18:6: warning: unused variable 'i' [-Wunused-variable]
+  int i,count;
+      ^
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:04:07 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:23:11: warning: format '%c' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
+  printf("%c",sentence);
+           ^
+..\main.c:18:8: warning: unused variable 'count' [-Wunused-variable]
+  int i,count;
+        ^~~~~
+..\main.c:18:6: warning: unused variable 'i' [-Wunused-variable]
+  int i,count;
+      ^
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:05:02 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:8: warning: unused variable 'count' [-Wunused-variable]
+  int i,count;
+        ^~~~~
+..\main.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i,count;
+      ^
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:07:52 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:27:33: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   printf("reverse sentence is: %s",sentence[i]);
+                                 ^
+gcc -o assignment3.exe main.o 
+20:08:16 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:09:17 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:6: warning: unused variable 'i' [-Wunused-variable]
+  int i;
+      ^
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:09:48 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:10:01 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:27:33: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   printf("reverse sentence is: %s",sentence[i]);
+                                 ^
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:11:41 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:27:13: error: assignment to expression with array type
+   reverseArr=sentence[i];
+             ^
+20:12:08 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:27:14: error: expected expression before ']' token
+   reverseArr[]=sentence[i];
+              ^
+20:13:24 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:13:53 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:14:09 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:15:56 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:18:59 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:27:14: error: expected expression before ']' token
+   reverseArr[] = sentence[i];
+              ^
+..\main.c:19:8: warning: unused variable 'j' [-Wunused-variable]
+  int i,j;
+        ^
+20:19:07 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:8: warning: unused variable 'j' [-Wunused-variable]
+  int i,j;
+        ^
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:28:52 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:8: warning: unused variable 'j' [-Wunused-variable]
+  int i,j;
+        ^
+..\main.c:18:20: warning: unused variable 'reverseArr' [-Wunused-variable]
+  char sentence[50],reverseArr[50];
+                    ^~~~~~~~~~
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:33:16 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:20:1: warning: return type defaults to 'int' [-Wimplicit-int]
+ reverse(){
+ ^~~~~~~
+..\main.c:20:1: warning: conflicting types for 'reverse'
+..\main.c:12:7: note: previous declaration of 'reverse' was here
+  void reverse(void);
+       ^~~~~~~
+..\main.c: In function 'reverse':
+..\main.c:24:7: warning: comparison between pointer and integer
+  if(c != "\n"){
+       ^~
+..\main.c:24:7: warning: comparison with string literal results in unspecified behavior [-Waddress]
+gcc -o assignment3.exe main.o 
+20:34:08 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+20:34:32 **** Incremental Build of configuration Debug for project assignment3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment3.exe main.o 
+Info: Nothing to build for assignment3
+Info: Nothing to build for assignment3
+21:08:20 **** Incremental Build of configuration Debug for project assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:25:10: warning: unused variable 'n' [-Wunused-variable]
+  int num,n,count,i;
+          ^
+gcc -o assignment1.exe main.o 
+21:08:27 **** Incremental Build of configuration Debug for project assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment1.exe main.o 
+Info: Nothing to build for assignment1
+21:09:10 **** Incremental Build of configuration Debug for project assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment1.exe main.o 
+Info: Nothing to build for assignment1
+Info: Nothing to build for assignment1
+Info: Nothing to build for assignment1
+21:10:30 **** Incremental Build of configuration Debug for project assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment1.exe main.o 
+Info: Nothing to build for assignment1
+Info: Nothing to build for assignment1
+Info: Nothing to build for assignment1
+Info: Nothing to build for assignment1
+Info: Nothing to build for assignment1
+Info: Nothing to build for assignment1
+21:18:28 **** Incremental Build of configuration Debug for project assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:26:18: warning: unused variable 'count' [-Wunused-variable]
+  int start,end,i,count,check;
+                  ^~~~~
+gcc -o assignment1.exe main.o 
+Info: Nothing to build for assignment1
+21:19:08 **** Incremental Build of configuration Debug for project assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:26:18: warning: unused variable 'count' [-Wunused-variable]
+  int start,end,i,count,check;
+                  ^~~~~
+gcc -o assignment1.exe main.o 
+Info: Nothing to build for assignment1
+Info: Nothing to build for assignment1
+21:20:25 **** Incremental Build of configuration Debug for project assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:26:18: warning: unused variable 'count' [-Wunused-variable]
+  int start,end,i,count,check;
+                  ^~~~~
+gcc -o assignment1.exe main.o 
+Info: Nothing to build for assignment1
+Info: Nothing to build for assignment1
+21:20:48 **** Incremental Build of configuration Debug for project assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment1.exe main.o 
+Info: Nothing to build for assignment1
+21:21:11 **** Incremental Build of configuration Debug for project assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment1.exe main.o 
+Info: Nothing to build for assignment1
+21:21:59 **** Incremental Build of configuration Debug for project assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment1.exe main.o 
+Info: Nothing to build for assignment1
+Info: Nothing to build for assignment1
+Info: Nothing to build for assignment1
+Info: Nothing to build for assignment1
+21:23:12 **** Incremental Build of configuration Debug for project assignment1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment1.exe main.o 
+Info: Nothing to build for assignment1
+21:30:00 **** Rebuild of configuration Debug for project assignment4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:15:17: warning: implicit declaration of function 'fflus' [-Wimplicit-function-declaration]
+  fflush(stdin); fflus(stdout);
+                 ^~~~~
+..\main.c:12:17: warning: unused variable 'counter' [-Wunused-variable]
+  int base,exp,i,counter;
+                 ^~~~~~~
+..\main.c:12:15: warning: unused variable 'i' [-Wunused-variable]
+  int base,exp,i,counter;
+               ^
+gcc -o assignment4.exe main.o 
+main.o: In function `main':
+D:\Coruses\Embedded\Course_keroles\WorkSpace\Unit_2\Lec5\assignments\assignment4\Debug/../main.c:15: undefined reference to `fflus'
+D:\Coruses\Embedded\Course_keroles\WorkSpace\Unit_2\Lec5\assignments\assignment4\Debug/../main.c:19: undefined reference to `fflus'
+collect2.exe: error: ld returned 1 exit status
+21:30:15 **** Incremental Build of configuration Debug for project assignment4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:12:17: warning: unused variable 'counter' [-Wunused-variable]
+  int base,exp,i,counter;
+                 ^~~~~~~
+..\main.c:12:15: warning: unused variable 'i' [-Wunused-variable]
+  int base,exp,i,counter;
+               ^
+gcc -o assignment4.exe main.o 
+Info: Nothing to build for assignment4
+21:30:40 **** Incremental Build of configuration Debug for project assignment4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:12:17: warning: unused variable 'counter' [-Wunused-variable]
+  int base,exp,i,counter;
+                 ^~~~~~~
+..\main.c:12:15: warning: unused variable 'i' [-Wunused-variable]
+  int base,exp,i,counter;
+               ^
+gcc -o assignment4.exe main.o 
+Info: Nothing to build for assignment4
+21:38:58 **** Incremental Build of configuration Debug for project assignment4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'func':
+..\main.c:30:15: warning: implicit declaration of function 'power' [-Wimplicit-function-declaration]
+   return(base*power(base,power-1));
+               ^~~~~
+..\main.c:31:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o assignment4.exe main.o 
+main.o: In function `func':
+D:\Coruses\Embedded\Course_keroles\WorkSpace\Unit_2\Lec5\assignments\assignment4\Debug/../main.c:30: undefined reference to `power'
+D:\Coruses\Embedded\Course_keroles\WorkSpace\Unit_2\Lec5\assignments\assignment4\Debug/../main.c:30: undefined reference to `power'
+collect2.exe: error: ld returned 1 exit status
+21:39:11 **** Incremental Build of configuration Debug for project assignment4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'func':
+..\main.c:30:15: error: called object 'pow' is not a function or function pointer
+   return(base*pow(base,pow-1));
+               ^~~
+..\main.c:28:24: note: declared here
+ int func(int base, int pow){
+                        ^~~
+..\main.c:31:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:39:29 **** Incremental Build of configuration Debug for project assignment4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'func':
+..\main.c:30:15: error: called object 'powrr' is not a function or function pointer
+   return(base*powrr(base,powrr-1));
+               ^~~~~
+..\main.c:28:24: note: declared here
+ int func(int base, int powrr){
+                        ^~~~~
+..\main.c:31:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:39:43 **** Incremental Build of configuration Debug for project assignment4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'func':
+..\main.c:30:15: error: called object 'powrr' is not a function or function pointer
+   return(base*powrr(base,powrr-1));
+               ^~~~~
+..\main.c:28:24: note: declared here
+ int func(int base, int powrr){
+                        ^~~~~
+..\main.c:31:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:40:30 **** Incremental Build of configuration Debug for project assignment4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'func':
+..\main.c:30:15: error: called object 'powr' is not a function or function pointer
+   return(base*powr(base,powr-1));
+               ^~~~
+..\main.c:28:24: note: declared here
+ int func(int base, int powr){
+                        ^~~~
+..\main.c:31:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+21:40:42 **** Incremental Build of configuration Debug for project assignment4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'func':
+..\main.c:31:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o assignment4.exe main.o 
+Info: Nothing to build for assignment4
+21:41:50 **** Incremental Build of configuration Debug for project assignment4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:31:2: error: expected identifier or '(' before 'else'
+ }else{
+  ^~~~
+..\main.c: In function 'func':
+..\main.c:31:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }else{
+ ^
+21:42:32 **** Incremental Build of configuration Debug for project assignment4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment4.exe main.o 
+Info: Nothing to build for assignment4
+21:42:44 **** Incremental Build of configuration Debug for project assignment4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'func':
+..\main.c:34:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o assignment4.exe main.o 
+Info: Nothing to build for assignment4
+Info: Nothing to build for assignment4
+Info: Nothing to build for assignment4
+21:43:09 **** Incremental Build of configuration Debug for project assignment4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o assignment4.exe main.o 
+Info: Nothing to build for assignment4

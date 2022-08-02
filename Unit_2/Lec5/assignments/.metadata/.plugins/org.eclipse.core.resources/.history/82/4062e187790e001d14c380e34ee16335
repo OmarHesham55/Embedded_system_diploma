@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 28, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+	int func1(void){
+		int x,y;
+		printf("Enter two numbers: ");
+		fflush(stdin); fflush(stdout);
+		scanf("%d %d",&x ,&y);
+
+	}
+
+int main(){
+
+
+}

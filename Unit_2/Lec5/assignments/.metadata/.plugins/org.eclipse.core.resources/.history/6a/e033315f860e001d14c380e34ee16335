@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 28, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int func1(){
+	int num
+	printf("Enter a number: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&num);
+
+}
+
+int main(){
+
+
+}

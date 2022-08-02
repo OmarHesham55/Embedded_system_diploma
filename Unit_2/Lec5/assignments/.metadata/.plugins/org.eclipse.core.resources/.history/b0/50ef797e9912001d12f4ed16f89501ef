@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 2, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+int main(){
+	int base,exp,i,counter;
+
+	printf("enter a number:");
+	fflush(stdin); fflus(stdout);
+	sacanf("%d",&base);
+
+	printf("enter ther power:");
+	fflush(stdin); fflus(stdout);
+	sacanf("%d",&exp);
+}

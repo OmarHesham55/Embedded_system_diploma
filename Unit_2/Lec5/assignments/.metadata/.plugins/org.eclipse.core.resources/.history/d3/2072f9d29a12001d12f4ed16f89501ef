@@ -1,0 +1,32 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 2, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+
+int func(int base,int pow);
+
+int main(){
+	int base,power;
+
+	printf("enter a number:");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&base);
+
+	printf("enter the power:");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&power);
+
+	printf("%d^%d = %d",base,power,func(base,power));
+}
+
+int func(int base, int pow){
+	if(pow != 0)
+		return(base*pow(base,pow-1));
+}
+

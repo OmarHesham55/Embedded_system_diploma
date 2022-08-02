@@ -1,0 +1,36 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 28, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+	int func1(void){
+		int x,y,i;
+		printf("Enter two numbers: ");
+		fflush(stdin); fflush(stdout);
+		scanf("%d %d",&x ,&y);
+
+		if(x<y){
+			for(i=x;i<y;i++){
+				if(i%2 != 0){
+					printf("%d",i);
+				}
+			}
+		}else{
+			for(i=y;i<x;i++){
+				if(i%2 != 0 ){
+					printf("%d",i);
+				}
+			}
+		}
+
+	}
+
+int main(){
+
+
+}
