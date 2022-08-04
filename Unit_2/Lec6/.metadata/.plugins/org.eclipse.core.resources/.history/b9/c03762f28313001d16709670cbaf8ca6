@@ -1,0 +1,23 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 4, 2022
+ *      Author: omart
+ */
+
+
+struct sComplex{
+	double real;
+	double imginary;
+};
+
+struct sComplex complexNum(){
+
+	struct sComplex num;
+
+	return num;
+}
+
+int main(){
+
+}

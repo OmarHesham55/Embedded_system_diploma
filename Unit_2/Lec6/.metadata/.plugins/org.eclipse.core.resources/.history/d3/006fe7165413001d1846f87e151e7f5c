@@ -1,0 +1,33 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 3, 2022
+ *      Author: omart
+ */
+
+
+#include"stdio.h"
+
+struct sDate{
+	int day;
+	int month;
+	int year;
+};
+
+struct sEmployee{
+	char name[50];
+	char gender[50];
+	struct sDate birthday;
+	struct sDate graduation;
+	int salary;
+};
+
+struct sDate readDate(char dateName[]){
+	struct sDate date;
+	printf("Enter your %s example(23/3/2023)");
+	scanf("%d/%d/%d",date.day,date.month,date.year);
+}
+
+int main(){
+
+}

@@ -1,0 +1,59 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 4, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+#include "string.h"
+
+struct sStudents{
+	int id;
+	char name[50];
+	float marks;
+};
+
+int main(){
+	struct sStudents student[100];
+	int i=0,count=0,j;
+	char ans;
+
+
+//	printf("Your ID:");
+//	fflush(stdin); fflush(stdout);
+//	scanf("%d",&student[i].id);
+//
+//	printf("Your Name:");
+//	fflush(stdin); fflush(stdout);
+//	gets(student[i].name);
+//
+//	printf("Your Mark:");
+//	fflush(stdin); fflush(stdout);
+//	scanf("%f",&student[i].marks);
+//
+//	printf("[%d] name:%s\n  mark:%.1f",i,student[i].name,student[i].marks);
+
+
+	do{
+		printf("Your ID:");
+		fflush(stdin); fflush(stdout);
+		scanf("%d",&student[i].id);
+
+		printf("Your Name:");
+		fflush(stdin); fflush(stdout);
+		gets(student[i].name);
+
+		printf("Your Mark:");
+		fflush(stdin); fflush(stdout);
+		scanf("%f",&student[i].marks);
+
+		i++;
+		count++;
+	}while(ans=='y');
+
+	for(i=0)
+
+
+}

@@ -1,0 +1,20 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 4, 2022
+ *      Author: omart
+ */
+
+#include "stdio.h"
+
+#define pi 3.14
+#define area 2*pi*r
+
+int main(){
+	float r;
+
+	printf("R:");
+	fflush(stdin); fflush(stdout);
+	scanf("%f",&r);
+	printf("area=%.2f",area);
+}

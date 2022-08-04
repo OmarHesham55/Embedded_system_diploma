@@ -1,0 +1,47 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 4, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+struct sStudents{
+	int id;
+	char name[50];
+	float marks;
+};
+
+int main(){
+//	struct sStudents student[100];
+//	int i;
+
+	char arr[100];
+	fflush(stdin); fflush(stdout);
+	gets(arr);
+
+	printf("%d"sizeof(arr));
+//	for(i=0; i<100; i++){
+//
+//	}
+//
+//	printf("Your ID:");
+//	fflush(stdin); fflush(stdout);
+//	scanf("%d",&student.id);
+//
+//	printf("Your Name:");
+//	fflush(stdin); fflush(stdout);
+//	gets(student.name);
+//
+//	printf("Your Mark:");
+//	fflush(stdin); fflush(stdout);
+//	scanf("%d",&student.marks);
+//
+//	for(i=0; i<sizeof(student)/sizeof(struct sStudents); i++){
+//		printf("[%d] name:%s\n  mark:%f",i,student[i].name,student[i].marks);
+//	}
+
+
+}

@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 3, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+
+struct studentInfo{
+	char name[50];
+	int roll;
+	float mark;
+}
+
+int main(){
+	printf("Enter your data\n");
+	printf("Your Name:");
+	fflush(stdin); fflush(stdout);
+	gets(studentInfo.name);
+}

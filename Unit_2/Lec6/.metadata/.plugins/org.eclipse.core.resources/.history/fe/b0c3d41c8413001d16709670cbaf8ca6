@@ -1,0 +1,26 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 4, 2022
+ *      Author: omart
+ */
+
+#include "stdio.h"
+struct sComplex{
+	double real;
+	double imginary;
+};
+
+struct sComplex complexNum(){
+
+	struct sComplex num;
+	printf("Enter the %s number example (r,iJ)");
+	fflush(stdin); fflush(stdout);
+	scanf("(%lf,%lf)",&num.real,&num.imginary);
+
+	return num;
+}
+
+int main(){
+
+}
