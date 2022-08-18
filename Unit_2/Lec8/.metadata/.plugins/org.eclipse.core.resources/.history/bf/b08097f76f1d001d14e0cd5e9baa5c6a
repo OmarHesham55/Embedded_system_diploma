@@ -1,0 +1,18 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 8, 2022
+ *      Author: omart
+ */
+
+#include <stdio.h>
+
+int main(){
+	float x = 0.7;
+	if(0.7>x){
+		printf("HELLO");
+
+	}else{
+		printf("HI");
+	}
+}

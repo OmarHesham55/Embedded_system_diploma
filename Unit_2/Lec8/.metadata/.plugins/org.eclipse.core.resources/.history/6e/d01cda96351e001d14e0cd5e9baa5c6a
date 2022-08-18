@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 8, 2022
+ *      Author: omart
+ */
+
+#include <stdio.h>
+
+int main(){
+	int a =2;
+	if((a--,--a,a))
+		printf("HELLO");
+	else
+		printf("HI");
+}

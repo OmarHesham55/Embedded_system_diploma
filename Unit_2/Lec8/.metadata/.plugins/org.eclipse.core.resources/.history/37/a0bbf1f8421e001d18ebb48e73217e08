@@ -1,0 +1,18 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 8, 2022
+ *      Author: omart
+ */
+
+#include <stdio.h>
+
+int main(){
+	char arr[] = "mohamed";
+	printf("%p\n",arr);
+	printf("%p\n",&arr);
+	printf("%p %s\n",arr+2,arr+2);
+	printf("%p %s\n",&arr+1,&arr+2);
+
+
+}

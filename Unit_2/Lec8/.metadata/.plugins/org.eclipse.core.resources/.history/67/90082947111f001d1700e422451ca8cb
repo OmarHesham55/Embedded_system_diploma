@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 8, 2022
+ *      Author: omart
+ */
+
+#include <stdio.h>
+int main(){
+	int a,b,c;
+
+	printf("Enter a number:");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&a);
+	printf("which bit do you want to check:");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&b);
+
+	c = 1 << b;
+	if(a&c){
+		printf("the %dth bit is 1",b);
+	}else{
+		printf("the %dth bit is 0",b);
+	}
+}

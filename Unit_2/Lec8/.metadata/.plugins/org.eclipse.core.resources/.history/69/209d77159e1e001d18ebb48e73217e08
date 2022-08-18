@@ -1,0 +1,26 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 8, 2022
+ *      Author: omart
+ */
+
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	int mainArr[10];
+	int reverseArr[10];
+	int i,j,n;
+	printf("how many numbers you will enter:");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&n);
+	printf("Enter the numbers");
+	for(i=0;i<n;i++){
+		fflush(stdin); fflush(stdout);
+		scanf("%d",&mainArr[i]);
+	}
+	for(j=0;j<n;j++){
+		printf("%d ",mainArr[j]);
+	}
+}

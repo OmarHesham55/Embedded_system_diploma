@@ -1,0 +1,27 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 8, 2022
+ *      Author: omart
+ */
+
+#include <stdio.h>
+
+int clearbit(int n,int m){
+	n &=~(1<<m);
+	printf("after cleared specified bit the number is:%d",n);
+	return n;
+}
+
+int main(){
+	int n,m;
+	printf("Enter number:");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&n);
+	printf("Enter specified clear bit:");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&m);
+
+
+
+}

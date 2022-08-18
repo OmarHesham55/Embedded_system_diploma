@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 18, 2022
+ *      Author: omart
+ */
+
+#define max 100
+
+#include<stdio.h>
+
+int main(){
+	char sentence[max];
+
+	printf("put here a sentence:");
+	fflush(stdin); fflush(stdout);
+	fgets(sentence,max,stdin);
+
+}

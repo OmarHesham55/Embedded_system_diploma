@@ -1,0 +1,28 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 8, 2022
+ *      Author: omart
+ */
+
+#include <stdio.h>
+#include <string.h>
+#include <conio.h>
+#include <stdlib.h>
+
+int main(){
+	char username[50];
+	char name[50];
+	printf("username:");
+	fflush(stdin); fflush(stdout);
+	fgets(username,50,stdin);
+	system("clear");
+	printf("Enter your name:");
+	fflush(stdin); fflush(stdout);
+	fgets(name,50,stdin);
+	if(strcmp(username,name)){
+		printf("Welcome");
+	}else{
+		printf("the name doesn't match with username");
+	}
+}

@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 8, 2022
+ *      Author: omart
+ */
+
+#include <stdio.h>
+
+int main(){
+	int a;
+	int b;
+	for(a=0,b=0;(a<10,b<5);(a++,b++)){
+		printf("%d %d\n",a,b);
+	}
+}

@@ -1,0 +1,51 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 8, 2022
+ *      Author: omart
+ */
+
+
+#include "stdio.h"
+#include "string.h"
+
+//void reverseWord(char* word){
+//	char *start_ptr,*end_ptr,ch;
+//	int x,l;
+//
+//	l = strlen(word);
+//	start_ptr= word; // @ &word[0]
+//	end_ptr = word; //  @ &word[0]
+//
+//	for(x=0;x<l-1;x++){
+//		end_ptr++; // end_ptr @ &word[4];
+//	}
+//
+//	for(x=0; x<l/2; x++){    // o m a r
+//
+//		ch = *end_ptr; // ch = r;  ch = a
+//		*end_ptr = *start_ptr; // end_ptr = o; end = m
+//		*start_ptr = ch; // start_ptr = r; = a
+//
+//		start_ptr++; // 1
+//		end_ptr--; // 2
+//	}
+//}
+
+#define x 3
+
+
+int main(){
+//	char str[100];
+//
+//	printf("Enter a word:");
+//	fflush(stdin); fflush(stdout);
+//	gets(str);
+//
+//	reverseWord(str);
+//
+//	printf("\nreversed word:");
+//	printf("%s",str);
+
+	printf("%d",x);
+}

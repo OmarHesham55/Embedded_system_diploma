@@ -1,0 +1,12 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 8, 2022
+ *      Author: omart
+ */
+
+#include <stdio.h>
+int main(){
+	void a =0;
+	printf("%d",a);
+}

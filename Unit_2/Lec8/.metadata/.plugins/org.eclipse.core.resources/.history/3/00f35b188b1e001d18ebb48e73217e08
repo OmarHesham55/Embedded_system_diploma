@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 8, 2022
+ *      Author: omart
+ */
+
+#include <stdio.h>
+
+int main(){
+	int n;
+	printf("Print any number");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&n);
+
+	if(n & 256){
+		printf("MSB is 1");
+	}else{
+		printf("MSB is 0");
+	}
+}

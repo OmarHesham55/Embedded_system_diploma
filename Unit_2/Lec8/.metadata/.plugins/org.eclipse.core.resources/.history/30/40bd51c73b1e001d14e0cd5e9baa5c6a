@@ -1,0 +1,14 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 8, 2022
+ *      Author: omart
+ */
+
+#include <stdio.h>
+
+int main(){
+	int a = 1|2|3|4;
+	int b;
+	printf("%d",a);
+}

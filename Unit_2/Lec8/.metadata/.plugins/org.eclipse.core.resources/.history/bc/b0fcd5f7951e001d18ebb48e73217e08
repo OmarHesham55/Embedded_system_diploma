@@ -1,0 +1,33 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 8, 2022
+ *      Author: omart
+ */
+
+#include <stdio.h>
+
+int powerNum(int n){
+	if(n==1 || n==0){
+		printf("Enter another number except 1 & 0");
+	}else{
+		while(n!=0 && n!=1){
+			n/=3;
+		}
+	}
+	return n;
+}
+
+int main(){
+	int n,t;
+	printf("Enter number:");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&n);
+	t=n;
+	n = powerNum(n);
+	if(n==1){
+		printf("the Num:%d is power of 3",t);
+	}else{
+		printf("the Num:%d is not power of 3",t);
+	}
+}
