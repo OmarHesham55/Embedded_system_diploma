@@ -1,0 +1,31 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 4, 2022
+ *      Author: omart
+ */
+
+
+//==========================STUDENT DATABASE==========================
+
+#include<stdint.h>
+#include<stdio.h>
+#include<stdlib.h>
+
+
+typedef struct {
+	uint8_t name[50];
+	uint32_t age;
+	double height;
+	uint8_t gender;
+}student_data;
+
+struct newStudent {
+	student_data student;
+	struct student* nextStudent;
+};
+
+void addStudent(){
+
+}
+

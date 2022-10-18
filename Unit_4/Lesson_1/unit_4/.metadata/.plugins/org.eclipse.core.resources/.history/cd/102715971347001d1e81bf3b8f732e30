@@ -1,0 +1,97 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 4, 2022
+ *      Author: omart
+ */
+
+
+//==========================STUDENT DATABASE==========================
+
+#include<stdint.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include <string.h>
+#include<conio.h>
+
+typedef DPRINTF(...)  {fflush(stdin);\
+						fflush(stdout);\
+						printf(__VA_ARGS__);\
+						fflush(stdout);\
+						fflush(stdin);}
+
+typedef struct {
+	uint32_t Id;
+	uint8_t name[50];
+	uint32_t age;
+	float height;
+	uint8_t gender;
+}student_data;
+
+struct student {
+	student_data student;
+	struct student* nextStudent;
+};
+
+struct student* firstStudent = NULL;
+
+void addStudent(){
+	struct student* lastStudent, newStudent;
+	char arr[40];
+
+	//check if the is empty
+	if(firstStudent == NULL){
+		newStudent = (struct student*) malloc(sizeof(struct student));
+		firstStudent = newStudent;
+	}else{ // if there is exist data then navigates it until reach the last record
+		lastStudent = firstStudent;
+		while(lastStudent->nextStudent)
+			lastStudent =  lastStudent->nextStudent;
+		// add new record
+		newStudent = (struct student*) malloc(sizeof(struct student));
+		lastStudent->nextStudent = newStudent;
+	}
+
+	DPRINTF("insert the data\n\n");
+	DPRINTF("Name:");
+	gets(newStudent.student.name);
+	DPRINTF("\nID:");
+	gets(arr);
+	newStudent->student.Id = atoi(arr);
+	DPRINTF("\nheight:");
+	gets(arr);
+	newStudent->student.Id = atof(arr);
+	DPRINTF("\ngender:");
+	gets(newStudent->student.gender );
+}
+
+
+//delete a selected id
+
+void deleteStudent(){
+	int selected_id;
+	struct student* selected_student
+	struct student* prevStudent;
+
+
+	DPRINTF("Enter the id:\n");
+	scanf("%d",&selected_id);
+
+	if(firstStudent){
+		if(selected_student->student.Id == selected_id){
+			if()
+		}
+	}
+
+}
+
+int main(){
+
+	DPRINTF("Choose an option\n");
+	DPRINTF("1-Add a new student\n");
+	DPRINTF("2-delete a student\n");
+	DPRINTF("3-view a student\n");
+	DPRINTF("view all student\n");
+
+
+}

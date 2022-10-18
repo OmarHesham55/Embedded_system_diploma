@@ -1,0 +1,14 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 17, 2022
+ *      Author: omart
+ */
+
+#include<stdio.h>
+int main(){
+
+	void* x;
+	printf("%d",sizeof(x));
+	return 0;
+}

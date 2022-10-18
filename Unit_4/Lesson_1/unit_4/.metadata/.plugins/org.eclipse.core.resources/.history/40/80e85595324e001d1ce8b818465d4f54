@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 17, 2022
+ *      Author: omart
+ */
+
+
+int main(){
+
+	int* x;
+	printf("%x\t",x);
+	printf("%x\t",x++);
+
+	return 0;
+}

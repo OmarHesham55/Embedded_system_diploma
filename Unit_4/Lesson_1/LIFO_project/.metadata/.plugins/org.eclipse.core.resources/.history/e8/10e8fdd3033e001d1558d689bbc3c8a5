@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 27, 2022
+ *      Author: omart
+ */
+#include <string.h>
+#include "uart.h"
+#include <stdio.h>
+volatile unsigned char tx_string[100];
+void main(void){
+	printf("Enter a sentence");
+	fflush(stdin); fflush(stdout);
+	gets(rx_string);
+}
+

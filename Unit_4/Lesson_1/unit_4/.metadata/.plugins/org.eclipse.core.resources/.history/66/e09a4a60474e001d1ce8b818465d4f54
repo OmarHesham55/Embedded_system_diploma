@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 17, 2022
+ *      Author: omart
+ */
+
+#include<stdio.h>
+
+	void print_smt(){
+		printf("Hello\n");
+	}
+
+int main(){
+
+
+}

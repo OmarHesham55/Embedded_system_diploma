@@ -1,0 +1,212 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 10, 2022
+ *      Author: omart
+ */
+
+
+#include<stdint.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include <string.h>
+#include<conio.h>
+
+#define DPRINTF(...)   {fflush(stdout); \
+						fflush(stdin); \
+						printf(__VA_ARGS__); \
+						fflush(stdout); \
+						fflush(stdin);}
+
+struct student_data{
+	uint32_t Id;
+	char name[50];
+	uint32_t age;
+	float height;
+	char gender[10];
+};
+
+struct student {
+	struct student_data student;
+	struct student* nextStudent;
+};
+
+
+struct student* firstStudent = NULL;
+
+
+
+void addStudent(){
+	struct student* lastStudent;
+	struct student* newStudent;
+	char arr[100];
+
+	//check if the is empty
+	if(firstStudent == NULL){
+		newStudent = (struct student*) malloc(sizeof(struct student));
+		firstStudent = newStudent;
+	}else{ // if there is exist data then navigates it until reach the last record
+		lastStudent = firstStudent;
+		while(lastStudent->nextStudent)
+			lastStudent =  lastStudent->nextStudent;
+		// add new record
+		newStudent = (struct student*) malloc(sizeof(struct student));
+		lastStudent->nextStudent = newStudent;
+	}
+
+	DPRINTF("\ninsert the data\n\n");
+	DPRINTF("ID:");
+	gets(arr);
+	newStudent->student.Id = atoi(arr);
+	DPRINTF("Name:");
+	gets(newStudent->student.name);
+	DPRINTF("Age:");
+	gets(arr);
+	newStudent->student.age = atoi(arr);
+	DPRINTF("height:");
+	gets(arr);
+	newStudent->student.height = atof(arr);
+	DPRINTF("gender:");
+	gets(newStudent->student.gender);
+
+	newStudent->nextStudent = NULL;
+}
+
+
+//delete a selected id
+
+int delete_student(){
+	int selected_id;
+	DPRINTF("\nEnter the ID\n");
+	scanf("%d",&selected_id);
+
+	if(firstStudent){
+		struct student* selected_student = firstStudent;
+		struct student* prevStudent = NULL;
+
+		while(selected_student){
+			if(selected_student->student.Id == selected_id){
+
+				if(prevStudent){
+					prevStudent->nextStudent = selected_student->nextStudent;
+				}else{
+					firstStudent = selected_student->nextStudent;
+				}
+
+				free(selected_student);
+				return 1;
+			}
+			prevStudent = selected_student;
+			selected_student = selected_student->nextStudent;
+		}
+	}
+		DPRINTF("no students data exist");
+		return 0;
+}
+
+	void view_all(){
+		if(firstStudent){
+			struct student* Student_Point = firstStudent;
+			int count=1;
+			while(Student_Point){
+				DPRINTF("===================================\n")
+				DPRINTF("Record: %d\n",count);
+				DPRINTF("Name: %s\n",Student_Point->student.name);
+				DPRINTF("ID: %d\n",Student_Point->student.Id);
+				DPRINTF("height: %.1f\n",Student_Point->student.height);
+				DPRINTF("gender: %s\n",Student_Point->student.gender);
+				DPRINTF("===================================\n\n")
+				Student_Point = Student_Point->nextStudent;
+				count++;
+			}
+		}else
+			DPRINTF("\n\nNo students data exist");
+	}
+
+	void delete_all(){
+		if(firstStudent){
+			struct student* Student_Point = firstStudent;
+
+			while(Student_Point){
+				struct student* temp = Student_Point;
+				Student_Point = Student_Point->nextStudent;
+				free(temp);
+			}
+			firstStudent = NULL;
+		}else
+			DPRINTF("\n\nNo students data exist");
+	}
+
+void view_student(){
+		int id;
+		DPRINTF("\nEnter the Id:");
+		scanf("%d",&id);
+		if(firstStudent){
+			struct student* student_target = firstStudent;
+			while(student_target){
+				if(student_target->student.Id == id){
+					DPRINTF("===================================\n");
+					DPRINTF("ID: %d\n",student_target->student.Id);
+					DPRINTF("Name: %s\n",student_target->student.name);
+					DPRINTF("Age: %d\n",student_target->student.age);
+					DPRINTF("height: %.1f\n",student_target->student.height);
+					DPRINTF("gender: %s\n",student_target->student.gender);
+					DPRINTF("===================================\n\n")
+				}
+				student_target = student_target->nextStudent;
+			}
+			DPRINTF("this ID doesn't exist\n");
+		}
+	}
+
+void reverse_Student(){
+	int count = 0;
+	struct student* mainPnt = firstStudent;
+	struct student* reversePnt = mainPnt;
+
+		if(firstStudent){
+			while(mainPnt){
+				mainPnt=mainPnt->nextStudent;
+				count++;
+			}
+			DPRINTF("count %d\n",count);
+		}else
+			DPRINTF("nothing\n");
+
+	}
+
+int main(){
+	char option[40];
+
+	while(1){
+		DPRINTF("===================================\n")
+		DPRINTF("1-Add a new student\n");
+		DPRINTF("2-delete a student\n");
+		DPRINTF("3-view all students\n");
+		DPRINTF("4-delete all student\n");
+		DPRINTF("5-Records of the linked list --by iterative way--\n")
+		DPRINTF("Choose an option:");
+		gets(option);
+		DPRINTF("\n===================================\n\n")
+		switch (atoi(option)) {
+			case 1:
+				addStudent();
+				break;
+			case 2:
+				delete_student();
+				break;
+			case 3:
+				view_all();
+				break;
+			case 4:
+				delete_all();
+				break;
+			case 5:
+				reverse_Student();
+				break;
+			default:
+				break;
+		}
+	}
+
+}

@@ -1,0 +1,7 @@
+19:29:06 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+
+19:29:07 Build Finished (took 349ms)
+

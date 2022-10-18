@@ -1,0 +1,7 @@
+20:13:29 **** Incremental Build of configuration Debug for project task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task2.exe main.o 
+
+20:13:30 Build Finished (took 731ms)
+

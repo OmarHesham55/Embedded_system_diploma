@@ -1,0 +1,17 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 17, 2022
+ *      Author: omart
+ */
+
+#inlcude <stdio.h>
+int main(){
+
+	int* x;
+	printf("%p\t",x);
+	x++;
+	printf("%p\t",x);
+
+	return 0;
+}

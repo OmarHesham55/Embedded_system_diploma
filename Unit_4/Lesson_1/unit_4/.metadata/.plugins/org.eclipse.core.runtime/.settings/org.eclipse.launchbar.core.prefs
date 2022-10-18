@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Lab1_LIFO.exe,org.eclipse.launchbar.core.descriptorType.default\:lab2_FIFO.exe,org.eclipse.launchbar.core.descriptorType.default\:lab3_LinkedList.exe,org.eclipse.launchbar.core.descriptorType.default\:task_1.exe,org.eclipse.launchbar.core.descriptorType.default\:task2.exe,org.eclipse.launchbar.core.descriptorType.default\:task_3.exe,org.eclipse.launchbar.core.descriptorType.default\:task_4.exe,org.eclipse.launchbar.core.descriptorType.default\:test.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Lab1_LIFO.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Lab1_LIFO.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:task_3.exe/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:task_4.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:test.exe/activeLaunchMode=debug

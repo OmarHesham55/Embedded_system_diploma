@@ -1,0 +1,1872 @@
+03:17:53 **** Rebuild of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:28:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:28:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:21:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+main.o: In function `main':
+D:\Coruses\Embedded\Course_keroles\WorkSpace\Unit_4\Lesson_1\unit_4\Lab1_LIFO\Debug/../main.c:32: undefined reference to `LIFO_push_item'
+collect2.exe: error: ld returned 1 exit status
+03:46:40 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+..\lifo.c: In function 'LIFO_create_buff':
+..\lifo.c:11:13: error: 'NULL' undeclared (first use in this function)
+  if(buff != NULL ){
+             ^~~~
+..\lifo.c:11:13: note: each undeclared identifier is reported only once for each function it appears in
+..\lifo.c:20:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+04:13:55 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:51:43: error: invalid type argument of unary '*' (have 'uint32_t {aka unsigned int}')
+      printf("%d is popped successfully\n",*temp);
+                                           ^~~~~
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+04:14:37 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+..\lifo.c: In function 'LIFO_pop_item':
+..\lifo.c:52:16: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+    *poped_item = buffer->head;
+                ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:49:39: warning: passing argument 2 of 'LIFO_pop_item' from incompatible pointer type [-Wincompatible-pointer-types]
+    switch (LIFO_pop_item(&uart_buffer,&temp)) {
+                                       ^
+In file included from ..\main.c:12:0:
+..\lifo.h:33:21: note: expected 'uint32_t * {aka unsigned int *}' but argument is of type 'uint32_t ** {aka unsigned int **}'
+ LIFO_BUFF_STATUS    LIFO_pop_item(LIFO_BUFF* buffer , uint32_t* poped_item);
+                     ^~~~~~~~~~~~~
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+04:15:03 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+Info: Nothing to build for Lab1_LIFO
+04:16:15 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:44:4: error: expected '}' before 'else'
+   }else
+    ^~~~
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+..\main.c:16:12: warning: unused variable 'temp' [-Wunused-variable]
+  uint32_t* temp=0;
+            ^~~~
+..\main.c: At top level:
+..\main.c:49:2: error: expected identifier or '(' before 'for'
+  for(int i=0;i<5;i++){
+  ^~~
+..\main.c:49:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+  for(int i=0;i<5;i++){
+               ^
+..\main.c:49:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before '++' token
+  for(int i=0;i<5;i++){
+                   ^~
+..\main.c:67:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+04:16:27 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:49:39: warning: passing argument 2 of 'LIFO_pop_item' from incompatible pointer type [-Wincompatible-pointer-types]
+    switch (LIFO_pop_item(&uart_buffer,&temp)) {
+                                       ^
+In file included from ..\main.c:12:0:
+..\lifo.h:33:21: note: expected 'uint32_t * {aka unsigned int *}' but argument is of type 'uint32_t ** {aka unsigned int **}'
+ LIFO_BUFF_STATUS    LIFO_pop_item(LIFO_BUFF* buffer , uint32_t* poped_item);
+                     ^~~~~~~~~~~~~
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+04:19:38 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:51:43: error: invalid type argument of unary '*' (have 'uint32_t {aka unsigned int}')
+      printf("%d is popped successfully\n",*temp);
+                                           ^~~~~
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+04:19:44 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:51:43: error: invalid type argument of unary '*' (have 'uint32_t {aka unsigned int}')
+      printf("%d is popped successfully\n",*temp);
+                                           ^~~~~
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+04:21:02 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:52:43: error: invalid type argument of unary '*' (have 'uint32_t {aka unsigned int}')
+      printf("%d is popped successfully\n",*temp);
+                                           ^~~~~
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+04:21:04 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:52:43: error: invalid type argument of unary '*' (have 'uint32_t {aka unsigned int}')
+      printf("%d is popped successfully\n",*temp);
+                                           ^~~~~
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+04:22:17 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:47:2: error: expected ';' before '}' token
+  }
+  ^
+..\main.c:53:43: error: invalid type argument of unary '*' (have 'uint32_t {aka unsigned int}')
+      printf("%d is popped successfully\n",*temp);
+                                           ^~~~~
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+04:22:26 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:53:43: error: invalid type argument of unary '*' (have 'uint32_t {aka unsigned int}')
+      printf("%d is popped successfully\n",*temp);
+                                           ^~~~~
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+04:23:16 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+Info: Nothing to build for Lab1_LIFO
+Info: Nothing to build for Lab1_LIFO
+Info: Nothing to build for Lab1_LIFO
+04:23:32 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:53:43: error: invalid type argument of unary '*' (have 'uint32_t {aka unsigned int}')
+      printf("%d is popped successfully\n",*temp);
+                                           ^~~~~
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+04:23:35 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+04:23:49 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(void){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+04:23:55 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:21: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+                     ^
+..\main.c:29:11: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+           ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+04:24:28 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:15:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:29:12: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t* buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+            ^~~~~~~
+..\main.c:22:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:09:43 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:30:12: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t* buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+            ^~~~~~~
+..\main.c:23:26: warning: unused variable 'I2C_buffer' [-Wunused-variable]
+  LIFO_BUFF uart_buffer , I2C_buffer;
+                          ^~~~~~~~~~
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+16:10:04 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:30:12: warning: unused variable 'buffer2' [-Wunused-variable]
+  uint32_t* buffer2 = (uint32_t*) malloc(5 * sizeof(uint32_t));
+            ^~~~~~~
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+16:10:10 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:10:20 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:10:44 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:36:4: error: expected ';' before 'switch'
+    switch (LIFO_push_item(&uart_buffer,i)) {
+    ^~~~~~
+16:10:48 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:11:44 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:12:02 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:36:4: error: expected ';' before 'switch'
+    switch (LIFO_push_item(&uart_buffer,i)) {
+    ^~~~~~
+16:12:04 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:17:34 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:17:53 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:18:25 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:20:16 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:20:25 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:21:55 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:23:48 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:24:23 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:27:07 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:27:52 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:28:53 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+..\lifo.c: In function 'LIFO_pop_item':
+..\lifo.c:53:4: error: invalid operands to binary * (have 'int' and 'uint32_t * {aka unsigned int *}')
+  printf("%d",*buffer->head)
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    *poped_item = *buffer->head;
+    ^
+16:29:09 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+16:29:26 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:30:20 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:35:03 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:41:31 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:46:21 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:50:39 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+16:50:53 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:52:53 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:53:08 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:55:18 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:55:35 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+16:56:07 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+19:22:30 **** Incremental Build of configuration Debug for project Lab1_LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Lab1_LIFO.exe lifo.o main.o 
+19:22:31 **** Rebuild of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:29:22: warning: passing argument 1 of 'FIFO_Push' from incompatible pointer type [-Wincompatible-pointer-types]
+    switch (FIFO_Push(buffer,i)) {
+                      ^~~~~~
+In file included from ..\main.c:9:0:
+..\fifo.h:39:13: note: expected 'FIFO_INIT_BUFF * {aka struct <anonymous> *}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ FIFO_STATUS FIFO_Push(FIFO_INIT_BUFF* buffer,uint8_t item);
+             ^~~~~~~~~
+..\main.c:44:14: error: incompatible type for argument 1 of 'FIFO_POP'
+  if(FIFO_POP(uart,&j) == FIFO_noerror){
+              ^~~~
+In file included from ..\main.c:9:0:
+..\fifo.h:40:13: note: expected 'FIFO_INIT_BUFF * {aka struct <anonymous> *}' but argument is of type 'FIFO_INIT_BUFF {aka struct <anonymous>}'
+ FIFO_STATUS FIFO_POP(FIFO_INIT_BUFF* buffer,uint8_t* item);
+             ^~~~~~~~
+..\main.c:44:19: warning: passing argument 2 of 'FIFO_POP' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(FIFO_POP(uart,&j) == FIFO_noerror){
+                   ^
+In file included from ..\main.c:9:0:
+..\fifo.h:40:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka unsigned int *}'
+ FIFO_STATUS FIFO_POP(FIFO_INIT_BUFF* buffer,uint8_t* item);
+             ^~~~~~~~
+..\main.c:47:20: error: incompatible type for argument 1 of 'FIFO_POP'
+   switch (FIFO_POP(uart,&j)) {
+                    ^~~~
+In file included from ..\main.c:9:0:
+..\fifo.h:40:13: note: expected 'FIFO_INIT_BUFF * {aka struct <anonymous> *}' but argument is of type 'FIFO_INIT_BUFF {aka struct <anonymous>}'
+ FIFO_STATUS FIFO_POP(FIFO_INIT_BUFF* buffer,uint8_t* item);
+             ^~~~~~~~
+..\main.c:47:25: warning: passing argument 2 of 'FIFO_POP' from incompatible pointer type [-Wincompatible-pointer-types]
+   switch (FIFO_POP(uart,&j)) {
+                         ^
+In file included from ..\main.c:9:0:
+..\fifo.h:40:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka unsigned int *}'
+ FIFO_STATUS FIFO_POP(FIFO_INIT_BUFF* buffer,uint8_t* item);
+             ^~~~~~~~
+Info: Nothing to build for Lab1_LIFO
+19:23:10 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:44:20: warning: passing argument 2 of 'FIFO_POP' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(FIFO_POP(&uart,&j) == FIFO_noerror){
+                    ^
+In file included from ..\main.c:9:0:
+..\fifo.h:40:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka unsigned int *}'
+ FIFO_STATUS FIFO_POP(FIFO_INIT_BUFF* buffer,uint8_t* item);
+             ^~~~~~~~
+..\main.c:47:26: warning: passing argument 2 of 'FIFO_POP' from incompatible pointer type [-Wincompatible-pointer-types]
+   switch (FIFO_POP(&uart,&j)) {
+                          ^
+In file included from ..\main.c:9:0:
+..\fifo.h:40:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka unsigned int *}'
+ FIFO_STATUS FIFO_POP(FIFO_INIT_BUFF* buffer,uint8_t* item);
+             ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+..\fifo.c: In function 'FIFO_initialize':
+..\fifo.c:12:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   fifo_init->start =buffer;
+                    ^
+..\fifo.c:13:18: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   fifo_init->end =buffer;
+                  ^
+..\fifo.c:14:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   fifo_init->point =buffer;
+                    ^
+..\fifo.c: In function 'FIFO_Push':
+..\fifo.c:33:2: error: invalid type argument of unary '*' (have 'int')
+  *(buffer->end) = item;
+  ^~~~~~~~~~~~~~
+..\fifo.c: In function 'FIFO_POP':
+..\fifo.c:55:10: error: invalid type argument of unary '*' (have 'int')
+  *item = *buffer->point;
+          ^~~~~~~~~~~~~~
+Info: Nothing to build for Lab1_LIFO
+19:23:29 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+..\fifo.c: In function 'FIFO_initialize':
+..\fifo.c:12:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   fifo_init->start =buffer;
+                    ^
+..\fifo.c:13:18: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   fifo_init->end =buffer;
+                  ^
+..\fifo.c:14:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+   fifo_init->point =buffer;
+                    ^
+..\fifo.c: In function 'FIFO_Push':
+..\fifo.c:33:2: error: invalid type argument of unary '*' (have 'int')
+  *(buffer->end) = item;
+  ^~~~~~~~~~~~~~
+..\fifo.c: In function 'FIFO_POP':
+..\fifo.c:55:10: error: invalid type argument of unary '*' (have 'int')
+  *item = *buffer->point;
+          ^~~~~~~~~~~~~~
+Info: Nothing to build for Lab1_LIFO
+19:24:02 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:44:20: warning: passing argument 2 of 'FIFO_POP' from incompatible pointer type [-Wincompatible-pointer-types]
+  if(FIFO_POP(&uart,&j) == FIFO_noerror){
+                    ^
+In file included from ..\main.c:9:0:
+..\fifo.h:40:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka unsigned int *}'
+ FIFO_STATUS FIFO_POP(FIFO_INIT_BUFF* buffer,type* item);
+             ^~~~~~~~
+..\main.c:47:26: warning: passing argument 2 of 'FIFO_POP' from incompatible pointer type [-Wincompatible-pointer-types]
+   switch (FIFO_POP(&uart,&j)) {
+                          ^
+In file included from ..\main.c:9:0:
+..\fifo.h:40:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint32_t * {aka unsigned int *}'
+ FIFO_STATUS FIFO_POP(FIFO_INIT_BUFF* buffer,type* item);
+             ^~~~~~~~
+gcc -o lab2_FIFO.exe fifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+19:25:50 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+..\fifo.c:23:13: error: conflicting types for 'FIFO_Push'
+ FIFO_STATUS FIFO_Push(FIFO_INIT_BUFF* buffer,uint32_t item){
+             ^~~~~~~~~
+In file included from ..\fifo.c:7:0:
+..\fifo.h:39:13: note: previous declaration of 'FIFO_Push' was here
+ FIFO_STATUS FIFO_Push(FIFO_INIT_BUFF* buffer,type item);
+             ^~~~~~~~~
+Info: Nothing to build for Lab1_LIFO
+19:26:00 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab2_FIFO.exe fifo.o main.o 
+Info: Nothing to build for Lab1_LIFO
+19:26:08 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+In file included from ..\main.c:9:0:
+..\fifo.h:39:46: error: unknown type name 'uint32'
+ FIFO_STATUS FIFO_Push(FIFO_INIT_BUFF* buffer,uint32 item);
+                                              ^~~~~~
+..\main.c: In function 'main':
+..\main.c:29:12: warning: implicit declaration of function 'FIFO_Push' [-Wimplicit-function-declaration]
+    switch (FIFO_Push(&uart,i)) {
+            ^~~~~~~~~
+Info: Nothing to build for Lab1_LIFO
+19:26:13 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -o lab2_FIFO.exe fifo.o main.o 
+Info: Nothing to build for lab2_FIFO
+Info: Nothing to build for Lab1_LIFO
+19:26:45 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab2_FIFO.exe fifo.o main.o 
+Info: Nothing to build for lab2_FIFO
+Info: Nothing to build for Lab1_LIFO
+19:27:27 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab2_FIFO.exe fifo.o main.o 
+Info: Nothing to build for lab2_FIFO
+Info: Nothing to build for Lab1_LIFO
+19:29:10 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -o lab2_FIFO.exe fifo.o main.o 
+Info: Nothing to build for lab2_FIFO
+Info: Nothing to build for Lab1_LIFO
+19:29:49 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab2_FIFO.exe fifo.o main.o 
+Info: Nothing to build for lab2_FIFO
+Info: Nothing to build for Lab1_LIFO
+19:31:27 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -o lab2_FIFO.exe fifo.o main.o 
+Info: Nothing to build for lab2_FIFO
+Info: Nothing to build for Lab1_LIFO
+19:32:22 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab2_FIFO.exe fifo.o main.o 
+Info: Nothing to build for lab2_FIFO
+19:33:55 **** Incremental Build of configuration Debug for project lab2_FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab2_FIFO.exe fifo.o main.o 
+Info: Nothing to build for lab2_FIFO
+17:09:58 **** Rebuild of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:17:17: error: ISO C requires a named argument before '...'
+ typedef DPRINTF(...)  {fflush(stdin);\
+                 ^~~
+..\main.c:17:9: error: function definition declared 'typedef'
+ typedef DPRINTF(...)  {fflush(stdin);\
+         ^~~~~~~
+..\main.c:17:9: warning: return type defaults to 'int' [-Wimplicit-int]
+..\main.c: In function 'DPRINTF':
+..\main.c:19:8: warning: __VA_ARGS__ can only appear in the expansion of a C99 variadic macro
+ printf(__VA_ARGS__);\
+        ^
+..\main.c:19:8: error: '__VA_ARGS__' undeclared (first use in this function)
+ printf(__VA_ARGS__);\
+        ^~~~~~~~~~~
+..\main.c:19:8: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c: In function 'addStudent':
+..\main.c:44:14: error: incompatible types when assigning to type 'struct student' from type 'struct student *'
+   newStudent = (struct student*) malloc(sizeof(struct student));
+              ^
+..\main.c:45:16: error: incompatible types when assigning to type 'struct student *' from type 'struct student'
+   firstStudent = newStudent;
+                ^
+..\main.c:51:14: error: incompatible types when assigning to type 'struct student' from type 'struct student *'
+   newStudent = (struct student*) malloc(sizeof(struct student));
+              ^
+..\main.c:52:28: error: incompatible types when assigning to type 'struct student *' from type 'struct student'
+   lastStudent->nextStudent = newStudent;
+                            ^
+..\main.c:57:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent.student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:60:12: error: invalid type argument of '->' (have 'struct student')
+  newStudent->student.Id = atoi(arr);
+            ^~
+..\main.c:63:12: error: invalid type argument of '->' (have 'struct student')
+  newStudent->student.Id = atof(arr);
+            ^~
+..\main.c:65:17: error: invalid type argument of '->' (have 'struct student')
+  gets(newStudent->student.gender );
+                 ^~
+..\main.c: In function 'DPRINTF':
+..\main.c:17:1: warning: control reaches end of non-void function [-Wreturn-type]
+ typedef DPRINTF(...)  {fflush(stdin);\
+ ^~~~~~~
+..\main.c: In function 'delete_student':
+..\main.c:97:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+17:14:35 **** Rebuild of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:44:14: error: incompatible types when assigning to type 'struct student' from type 'struct student *'
+   newStudent = (struct student*) malloc(sizeof(struct student));
+              ^
+..\main.c:45:16: error: incompatible types when assigning to type 'struct student *' from type 'struct student'
+   firstStudent = newStudent;
+                ^
+..\main.c:51:14: error: incompatible types when assigning to type 'struct student' from type 'struct student *'
+   newStudent = (struct student*) malloc(sizeof(struct student));
+              ^
+..\main.c:52:28: error: incompatible types when assigning to type 'struct student *' from type 'struct student'
+   lastStudent->nextStudent = newStudent;
+                            ^
+..\main.c:57:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent.student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:60:12: error: invalid type argument of '->' (have 'struct student')
+  newStudent->student.Id = atoi(arr);
+            ^~
+..\main.c:63:12: error: invalid type argument of '->' (have 'struct student')
+  newStudent->student.Id = atof(arr);
+            ^~
+..\main.c:65:17: error: invalid type argument of '->' (have 'struct student')
+  gets(newStudent->student.gender );
+                 ^~
+..\main.c: In function 'view_all':
+..\main.c:107:13: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+     DPRINTF("\ngender: %s\n",Student_Point->student.gender);
+             ^
+..\main.c:19:14: note: in definition of macro 'DPRINTF'
+       printf(__VA_ARGS__); \
+              ^~~~~~~~~~~
+18:04:38 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:32:2: error: expected specifier-qualifier-list before 'student_data'
+  student_data student;
+  ^~~~~~~~~~~~
+..\main.c: In function 'addStudent':
+..\main.c:44:14: error: incompatible types when assigning to type 'struct student' from type 'struct student *'
+   newStudent = (struct student*) malloc(sizeof(struct student));
+              ^
+..\main.c:45:16: error: incompatible types when assigning to type 'struct student *' from type 'struct student'
+   firstStudent = newStudent;
+                ^
+..\main.c:48:20: error: 'struct student' has no member named 'nextStudent'
+   while(lastStudent->nextStudent)
+                    ^~
+..\main.c:49:30: error: 'struct student' has no member named 'nextStudent'
+    lastStudent =  lastStudent->nextStudent;
+                              ^~
+..\main.c:51:14: error: incompatible types when assigning to type 'struct student' from type 'struct student *'
+   newStudent = (struct student*) malloc(sizeof(struct student));
+              ^
+..\main.c:52:14: error: 'struct student' has no member named 'nextStudent'
+   lastStudent->nextStudent = newStudent;
+              ^~
+..\main.c:57:17: error: 'struct student' has no member named 'student'
+  gets(newStudent.student.name);
+                 ^
+..\main.c:60:12: error: invalid type argument of '->' (have 'struct student')
+  newStudent->student.Id = atoi(arr);
+            ^~
+..\main.c:63:12: error: invalid type argument of '->' (have 'struct student')
+  newStudent->student.Id = atof(arr);
+            ^~
+..\main.c:65:17: error: invalid type argument of '->' (have 'struct student')
+  gets(newStudent->student.gender );
+                 ^~
+..\main.c: In function 'delete_student':
+..\main.c:81:23: error: 'struct student' has no member named 'student'
+    if(selected_student->student.Id == selected_id){
+                       ^~
+..\main.c:84:17: error: 'struct student' has no member named 'nextStudent'
+      prevStudent->nextStudent = selected_student->nextStudent;
+                 ^~
+..\main.c:84:49: error: 'struct student' has no member named 'nextStudent'
+      prevStudent->nextStudent = selected_student->nextStudent;
+                                                 ^~
+..\main.c:86:18: error: 'struct student' has no member named 'nextStudent'
+      firstStudent->nextStudent = selected_student->nextStudent;
+                  ^~
+..\main.c:86:50: error: 'struct student' has no member named 'nextStudent'
+      firstStudent->nextStudent = selected_student->nextStudent;
+                                                  ^~
+..\main.c:93:35: error: 'struct student' has no member named 'nextStudent'
+    selected_student = firstStudent->nextStudent;
+                                   ^~
+..\main.c: In function 'view_all':
+..\main.c:104:39: error: 'struct student' has no member named 'student'
+     DPRINTF("Name: %s\n",Student_Point->student.name);
+                                       ^
+..\main.c:19:14: note: in definition of macro 'DPRINTF'
+       printf(__VA_ARGS__); \
+              ^~~~~~~~~~~
+..\main.c:105:39: error: 'struct student' has no member named 'student'
+     DPRINTF("\nID: %d\n",Student_Point->student.Id);
+                                       ^
+..\main.c:19:14: note: in definition of macro 'DPRINTF'
+       printf(__VA_ARGS__); \
+              ^~~~~~~~~~~
+..\main.c:106:43: error: 'struct student' has no member named 'student'
+     DPRINTF("\nheight: %f\n",Student_Point->student.height);
+                                           ^
+..\main.c:19:14: note: in definition of macro 'DPRINTF'
+       printf(__VA_ARGS__); \
+              ^~~~~~~~~~~
+..\main.c:107:43: error: 'struct student' has no member named 'student'
+     DPRINTF("\ngender: %s\n",Student_Point->student.gender);
+                                           ^
+..\main.c:19:14: note: in definition of macro 'DPRINTF'
+       printf(__VA_ARGS__); \
+              ^~~~~~~~~~~
+..\main.c:108:34: error: 'struct student' has no member named 'nextStudent'
+     Student_Point = Student_Point->nextStudent;
+                                  ^~
+..\main.c: In function 'delete_all':
+..\main.c:121:34: error: 'struct student' has no member named 'nextStudent'
+     Student_Point = Student_Point->nextStudent;
+                                  ^~
+18:04:55 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:44:14: error: incompatible types when assigning to type 'struct student' from type 'struct student *'
+   newStudent = (struct student*) malloc(sizeof(struct student));
+              ^
+..\main.c:45:16: error: incompatible types when assigning to type 'struct student *' from type 'struct student'
+   firstStudent = newStudent;
+                ^
+..\main.c:51:14: error: incompatible types when assigning to type 'struct student' from type 'struct student *'
+   newStudent = (struct student*) malloc(sizeof(struct student));
+              ^
+..\main.c:52:28: error: incompatible types when assigning to type 'struct student *' from type 'struct student'
+   lastStudent->nextStudent = newStudent;
+                            ^
+..\main.c:57:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent.student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:60:12: error: invalid type argument of '->' (have 'struct student')
+  newStudent->student.Id = atoi(arr);
+            ^~
+..\main.c:63:12: error: invalid type argument of '->' (have 'struct student')
+  newStudent->student.Id = atof(arr);
+            ^~
+..\main.c:65:17: error: invalid type argument of '->' (have 'struct student')
+  gets(newStudent->student.gender );
+                 ^~
+..\main.c: In function 'view_all':
+..\main.c:107:13: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+     DPRINTF("\ngender: %s\n",Student_Point->student.gender);
+             ^
+..\main.c:19:14: note: in definition of macro 'DPRINTF'
+       printf(__VA_ARGS__); \
+              ^~~~~~~~~~~
+18:12:59 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:58:17: error: 'newStudent' is a pointer; did you mean to use '->'?
+  gets(newStudent.student.name);
+                 ^
+                 ->
+..\main.c:66:7: warning: passing argument 1 of 'gets' makes pointer from integer without a cast [-Wint-conversion]
+  gets(newStudent->student.gender );
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t {aka unsigned char}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c: In function 'view_all':
+..\main.c:108:13: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+     DPRINTF("\ngender: %s\n",Student_Point->student.gender);
+             ^
+..\main.c:19:14: note: in definition of macro 'DPRINTF'
+       printf(__VA_ARGS__); \
+              ^~~~~~~~~~~
+18:13:16 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:58:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:66:7: warning: passing argument 1 of 'gets' makes pointer from integer without a cast [-Wint-conversion]
+  gets(newStudent->student.gender );
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t {aka unsigned char}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c: In function 'view_all':
+..\main.c:108:13: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+     DPRINTF("\ngender: %s\n",Student_Point->student.gender);
+             ^
+..\main.c:19:14: note: in definition of macro 'DPRINTF'
+       printf(__VA_ARGS__); \
+              ^~~~~~~~~~~
+gcc -o lab3_LinkedList.exe main.o 
+18:15:11 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:58:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:66:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.gender );
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+Info: Nothing to build for lab3_LinkedList
+18:16:58 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:58:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:66:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.gender );
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+18:26:15 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:58:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:66:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.gender );
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+18:39:54 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:61:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:63:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(arr);
+       ^~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:64:32: warning: pointer targets in passing argument 1 of 'atoi' differ in signedness [-Wpointer-sign]
+  newStudent->student.Id = atoi(arr);
+                                ^~~
+In file included from ..\main.c:13:0:
+c:\mingw\include\stdlib.h:335:38: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int atoi (const char *);
+                                      ^~~~
+..\main.c:66:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(arr);
+       ^~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:67:32: warning: pointer targets in passing argument 1 of 'atof' differ in signedness [-Wpointer-sign]
+  newStudent->student.Id = atof(arr);
+                                ^~~
+In file included from ..\main.c:13:0:
+c:\mingw\include\stdlib.h:339:41: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  double atof (const char *);
+                                         ^~~~
+..\main.c:69:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.gender );
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o lab3_LinkedList.exe main.o 
+18:40:10 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:61:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:69:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.gender );
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o lab3_LinkedList.exe main.o 
+18:41:25 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:61:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:69:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets((uint8_t*)newStudent->student.gender );
+       ^
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o lab3_LinkedList.exe main.o 
+18:41:46 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:61:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:69:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets((int8_t*)newStudent->student.gender );
+       ^
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int8_t * {aka signed char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o lab3_LinkedList.exe main.o 
+18:42:00 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:61:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:69:7: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  gets((int8_t)newStudent->student.gender );
+       ^
+..\main.c:69:7: warning: passing argument 1 of 'gets' makes pointer from integer without a cast [-Wint-conversion]
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'signed char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o lab3_LinkedList.exe main.o 
+18:42:16 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:61:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:69:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.gender );
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o lab3_LinkedList.exe main.o 
+18:43:59 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:61:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:69:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.gender );
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o lab3_LinkedList.exe main.o 
+18:45:21 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:62:27: error: assignment to expression with array type
+  newStudent->student.name = arr;
+                           ^
+..\main.c:71:30: error: assignment to expression with array type
+  newStudent->student.gender  = arr;
+                              ^
+18:56:43 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:61:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:69:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.gender);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o lab3_LinkedList.exe main.o 
+18:57:15 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'addStudent':
+..\main.c:61:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.name);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int8_t * {aka signed char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:69:7: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  gets(newStudent->student.gender);
+       ^~~~~~~~~~
+In file included from ..\main.c:12:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int8_t * {aka signed char *}'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o lab3_LinkedList.exe main.o 
+18:57:38 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+19:01:22 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+19:02:18 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+19:02:40 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+19:03:09 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+19:04:49 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+19:09:18 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+19:11:09 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+19:14:22 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+19:18:29 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+19:19:08 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+19:22:50 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+19:25:39 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+19:25:43 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+19:26:53 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+19:27:52 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+19:28:02 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+Info: Nothing to build for lab3_LinkedList
+19:29:06 **** Incremental Build of configuration Debug for project lab3_LinkedList ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o lab3_LinkedList.exe main.o 
+19:56:48 **** Rebuild of configuration Debug for project task_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'view_student':
+..\main.c:151:10: warning: unused variable 'count' [-Wunused-variable]
+   int id,count=0;
+          ^~~~~
+gcc -o task_1.exe main.o 
+19:56:56 **** Incremental Build of configuration Debug for project task_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_1.exe main.o 
+Info: Nothing to build for task_1
+19:57:12 **** Incremental Build of configuration Debug for project task_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_1.exe main.o 
+Info: Nothing to build for task_1
+19:57:31 **** Incremental Build of configuration Debug for project task_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_1.exe main.o 
+Info: Nothing to build for task_1
+19:59:55 **** Incremental Build of configuration Debug for project task_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_1.exe main.o 
+Info: Nothing to build for task_1
+20:00:22 **** Incremental Build of configuration Debug for project task_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_1.exe main.o 
+20:01:35 **** Incremental Build of configuration Debug for project task_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_1.exe main.o 
+20:02:30 **** Rebuild of configuration Debug for project task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task2.exe main.o 
+20:08:22 **** Incremental Build of configuration Debug for project task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task2.exe main.o 
+20:08:27 **** Incremental Build of configuration Debug for project task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task2.exe main.o 
+20:09:32 **** Incremental Build of configuration Debug for project task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task2.exe main.o 
+Info: Nothing to build for task2
+20:10:05 **** Incremental Build of configuration Debug for project task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task2.exe main.o 
+Info: Nothing to build for task2
+20:12:18 **** Incremental Build of configuration Debug for project task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task2.exe main.o 
+Info: Nothing to build for task2
+20:13:29 **** Incremental Build of configuration Debug for project task2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task2.exe main.o 
+14:52:04 **** Rebuild of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'records':
+..\main.c:174:10: warning: return makes integer from pointer without a cast [-Wint-conversion]
+   return count;
+          ^~~~~
+..\main.c:177:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o task_3.exe main.o 
+14:53:07 **** Incremental Build of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_3.exe main.o 
+Info: Nothing to build for task_3
+Info: Nothing to build for task_3
+Info: Nothing to build for task_3
+14:54:22 **** Incremental Build of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'records':
+..\main.c:178:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o task_3.exe main.o 
+14:54:30 **** Incremental Build of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_3.exe main.o 
+Info: Nothing to build for task_3
+14:55:29 **** Incremental Build of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:184:6: warning: unused variable 'req' [-Wunused-variable]
+  int req;
+      ^~~
+gcc -o task_3.exe main.o 
+14:55:36 **** Incremental Build of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_3.exe main.o 
+Info: Nothing to build for task_3
+15:08:05 **** Incremental Build of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_3.exe main.o 
+Info: Nothing to build for task_3
+15:28:28 **** Rebuild of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'reverse_Student':
+..\main.c:167:20: warning: unused variable 'reversePnt' [-Wunused-variable]
+    struct student* reversePnt = mainPnt;
+                    ^~~~~~~~~~
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+15:31:50 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'reverse_Student':
+..\main.c:170:12: warning: statement with no effect [-Wunused-value]
+     mainPnt->nextStudent;
+     ~~~~~~~^~~~~~~~~~~~~
+..\main.c:167:20: warning: unused variable 'reversePnt' [-Wunused-variable]
+    struct student* reversePnt = mainPnt;
+                    ^~~~~~~~~~
+gcc -o task_4.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file task_4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:32:09 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'reverse_Student':
+..\main.c:167:20: warning: unused variable 'reversePnt' [-Wunused-variable]
+    struct student* reversePnt = mainPnt;
+                    ^~~~~~~~~~
+gcc -o task_4.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file task_4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:32:27 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+15:32:52 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'reverse_Student':
+..\main.c:167:20: warning: unused variable 'reversePnt' [-Wunused-variable]
+    struct student* reversePnt = mainPnt;
+                    ^~~~~~~~~~
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+Info: Nothing to build for task_4
+15:49:14 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'reverse_Student':
+..\main.c:176:19: error: expected ')' before 'reversePnt'
+   DPRINTF("%s\n\n"reversePnt->student.name);
+                   ^
+..\main.c:17:14: note: in definition of macro 'DPRINTF'
+       printf(__VA_ARGS__); \
+              ^~~~~~~~~~~
+..\main.c:176:11: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   DPRINTF("%s\n\n"reversePnt->student.name);
+           ^
+..\main.c:17:14: note: in definition of macro 'DPRINTF'
+       printf(__VA_ARGS__); \
+              ^~~~~~~~~~~
+..\main.c:165:18: warning: unused variable 'reversePnt' [-Wunused-variable]
+  struct student* reversePnt = mainPnt;
+                  ^~~~~~~~~~
+15:49:52 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+15:50:48 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'reverse_Student':
+..\main.c:176:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'struct student *' [-Wformat=]
+   DPRINTF("%d\n\n",reversePnt->nextStudent);
+           ^
+..\main.c:17:14: note: in definition of macro 'DPRINTF'
+       printf(__VA_ARGS__); \
+              ^~~~~~~~~~~
+gcc -o task_4.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file task_4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:51:03 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+Info: Nothing to build for task_4
+18:42:57 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'reverse_Student':
+..\main.c:176:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'struct student *' [-Wformat=]
+   DPRINTF("%d\n\n",reversePnt->nextStudent);
+           ^
+..\main.c:17:14: note: in definition of macro 'DPRINTF'
+       printf(__VA_ARGS__); \
+              ^~~~~~~~~~~
+gcc -o task_4.exe main.o 
+18:43:26 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'reverse_Student':
+..\main.c:165:18: warning: unused variable 'reversePnt' [-Wunused-variable]
+  struct student* reversePnt = mainPnt;
+                  ^~~~~~~~~~
+gcc -o task_4.exe main.o 
+22:27:48 **** Rebuild of configuration Debug for project task_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_2.exe main.o 
+12:47:17 **** Incremental Build of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'records':
+..\main.c:168:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    count = *count+1;
+          ^
+..\main.c:174:2: error: 'else' without a previous 'if'
+  else{
+  ^~~~
+12:47:33 **** Incremental Build of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'records':
+..\main.c:168:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+    count = *count+1;
+          ^
+gcc -o task_3.exe main.o 
+13:18:34 **** Incremental Build of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_3.exe main.o 
+Info: Nothing to build for task_3
+13:19:55 **** Incremental Build of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'records':
+..\main.c:172:5: warning: implicit declaration of function 'dprintf' [-Wimplicit-function-declaration]
+     dprintf("0 Records\n");
+     ^~~~~~~
+gcc -o task_3.exe main.o 
+main.o: In function `records':
+D:\Coruses\Embedded\Course_keroles\WorkSpace\Unit_4\Lesson_1\unit_4\task_3\Debug/../main.c:172: undefined reference to `dprintf'
+collect2.exe: error: ld returned 1 exit status
+13:20:48 **** Incremental Build of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_3.exe main.o 
+Info: Nothing to build for task_3
+Info: Nothing to build for task_3
+Info: Nothing to build for task_3
+Info: Nothing to build for task_3
+Info: Nothing to build for task_3
+Info: Nothing to build for task_3
+Info: Nothing to build for task_3
+13:26:47 **** Rebuild of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'reverse_Student':
+..\main.c:176:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'struct student *' [-Wformat=]
+   DPRINTF("%d\n\n",reversePnt->nextStudent);
+           ^
+..\main.c:17:14: note: in definition of macro 'DPRINTF'
+       printf(__VA_ARGS__); \
+              ^~~~~~~~~~~
+gcc -o task_4.exe main.o 
+13:27:42 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'reverse_Student':
+..\main.c:165:18: warning: unused variable 'reversePnt' [-Wunused-variable]
+  struct student* reversePnt = mainPnt;
+                  ^~~~~~~~~~
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+13:31:22 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+13:33:27 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+13:51:37 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'reverse_Student':
+..\main.c:172:21: error: 'mainPnt' is a pointer; did you mean to use '->'?
+    mainPnt = mainPnt.nextStudent;
+                     ^
+                     ->
+13:51:58 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+13:54:53 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file task_4.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:55:03 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+13:59:09 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+14:03:15 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+14:06:51 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+14:07:59 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+14:08:15 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+14:10:35 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+14:12:42 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+14:19:24 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+Info: Nothing to build for task_4
+14:21:32 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+Info: Nothing to build for task_4
+14:23:38 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+Info: Nothing to build for task_4
+14:29:21 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+14:29:32 **** Incremental Build of configuration Debug for project task_4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_4.exe main.o 
+Info: Nothing to build for task_4
+17:44:30 **** Rebuild of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:12:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("%x\t",x);
+  ^~~~~~
+..\main.c:12:2: warning: incompatible implicit declaration of built-in function 'printf'
+..\main.c:12:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\main.c:12:11: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'int *' [-Wformat=]
+  printf("%x\t",x);
+           ^
+..\main.c:14:11: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'int *' [-Wformat=]
+  printf("%x\t",x);
+           ^
+..\main.c:12:2: warning: 'x' is used uninitialized in this function [-Wuninitialized]
+  printf("%x\t",x);
+  ^~~~~~~~~~~~~~~~
+gcc -o test.exe main.o 
+17:44:58 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:12:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("%p\t",x);
+  ^~~~~~
+..\main.c:12:2: warning: incompatible implicit declaration of built-in function 'printf'
+..\main.c:12:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\main.c:12:2: warning: 'x' is used uninitialized in this function [-Wuninitialized]
+  printf("%p\t",x);
+  ^~~~~~~~~~~~~~~~
+gcc -o test.exe main.o 
+17:45:10 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:8:2: error: invalid preprocessing directive #inlcude
+ #inlcude <stdio.h>
+  ^~~~~~~
+..\main.c: In function 'main':
+..\main.c:12:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("%p\t",x);
+  ^~~~~~
+..\main.c:12:2: warning: incompatible implicit declaration of built-in function 'printf'
+..\main.c:12:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+17:45:17 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:8:2: error: invalid preprocessing directive #inlcude
+ #inlcude<stdio.h>
+  ^~~~~~~
+..\main.c: In function 'main':
+..\main.c:12:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("%p\t",x);
+  ^~~~~~
+..\main.c:12:2: warning: incompatible implicit declaration of built-in function 'printf'
+..\main.c:12:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+17:45:29 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:12:2: warning: 'x' is used uninitialized in this function [-Wuninitialized]
+  printf("%p\t",x);
+  ^~~~~~~~~~~~~~~~
+gcc -o test.exe main.o 
+Info: Nothing to build for test
+Info: Nothing to build for test
+17:49:03 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:12:2: warning: 'x' is used uninitialized in this function [-Wuninitialized]
+  printf("%p\t",x);
+  ^~~~~~~~~~~~~~~~
+gcc -o test.exe main.o 
+Info: Nothing to build for test
+19:41:02 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o test.exe main.o 
+Info: Nothing to build for test
+19:42:40 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o test.exe main.o 
+Info: Nothing to build for test
+20:13:19 **** Incremental Build of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o test.exe main.o 
+Info: Nothing to build for test
+Info: Nothing to build for test
+Info: Nothing to build for test
+Info: Nothing to build for test
+Info: Nothing to build for test
+17:54:14 **** Rebuild of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:209:5: error: 'num' undeclared (first use in this function)
+     num = records(firstStudent);
+     ^~~
+..\main.c:209:5: note: each undeclared identifier is reported only once for each function it appears in
+17:54:14 **** Rebuild of configuration Debug for project test ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o test.exe main.o 
+17:54:39 **** Incremental Build of configuration Debug for project task_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o task_3.exe main.o 
+Info: Nothing to build for task_3
