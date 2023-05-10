@@ -29,24 +29,24 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-unit6_Lec4_lab1.elf \
+lab1.elf \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-unit6_Lec4_lab1.list \
+lab1.list \
 
 OBJCOPY_BIN += \
-unit6_Lec4_lab1.bin \
+lab1.bin \
 
 
 # All Target
-all: unit6_Lec4_lab1.elf secondary-outputs
+all: lab1.elf secondary-outputs
 
 # Tool invocations
-unit6_Lec4_lab1.elf: $(OBJS) $(USER_OBJS) D:\Coruses\Embedded\Course_keroles\stmCube_workspace\unit6_Lec4\STM32F103C6TX_FLASH.ld
-	arm-none-eabi-gcc -o "unit6_Lec4_lab1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\Coruses\Embedded\Course_keroles\stmCube_workspace\unit6_Lec4\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="unit6_Lec4_lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+lab1.elf: $(OBJS) $(USER_OBJS) D:\University\Final_Project\lab1\STM32F103C6TX_FLASH.ld
+	arm-none-eabi-gcc -o "lab1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\University\Final_Project\lab1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -55,13 +55,13 @@ default.size.stdout: $(EXECUTABLES)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-unit6_Lec4_lab1.list: $(EXECUTABLES)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "unit6_Lec4_lab1.list"
+lab1.list: $(EXECUTABLES)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "lab1.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-unit6_Lec4_lab1.bin: $(EXECUTABLES)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "unit6_Lec4_lab1.bin"
+lab1.bin: $(EXECUTABLES)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "lab1.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 
