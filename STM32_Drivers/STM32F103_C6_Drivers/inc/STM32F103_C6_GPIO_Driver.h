@@ -19,14 +19,18 @@
 //*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
 
 
+#define PIN_SET			1
+#define PIN_RESET		0
+
+
 //------------------------------
 //Macros Configuration Reference::
 //------------------------------
 
 typedef struct{
-	volatile uint16_t PIN_NUM;
-	volatile uint8_t PIN_MODE;			// This Pin Must Choose from @ref GPIO_MODE_x
-	volatile uint8_t	PIN_SPEED;		// choose this Pin with referencing to @ref GPIO_MODE_SPEED_x
+	volatile uint16_t 	PIN_NUM;
+	volatile uint8_t 	PIN_MODE;			// This Pin Must Choose from @ref GPIO_MODE_x
+	volatile uint8_t	PIN_SPEED;			// choose this Pin with referencing to @ref GPIO_MODE_SPEED_x
 }GPIO_Pin_init_t;
 
 //*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
@@ -70,7 +74,6 @@ typedef struct{
 **11: Output mode, max speed 50 MHz.
  * */
 
-#define GPIO_MODE_SPEED_RS									0x00000000u
 #define GPIO_MODE_SPEED_10M									0x00000001u
 #define GPIO_MODE_SPEED_2M									0x00000002u
 #define GPIO_MODE_SPEED_50M									0x00000003u
@@ -89,8 +92,10 @@ void MCAL_GPIO_DeINIT(GPIO_REG_t* GPIOx);
 uint8_t MCAL_GPIO_READ_PIN(GPIO_REG_t* GPIOx,uint16_t pinNumber);
 uint16_t MCAL_GPIO_READ_PORT(GPIO_REG_t* GPIOx);
 void MCAL_GPIO_WRITE_PIN(GPIO_REG_t* GPIOx,uint16_t pinNumber,uint8_t value);
-void MCAL_GPIO_WRITE_PORT(GPIO_REG_t* GPIOx,uint32_t value);
+void MCAL_GPIO_WRITE_PORT(GPIO_REG_t* GPIOx,uint16_t value);
 void MCAL_GPIO_TOGGLE_PIN(GPIO_REG_t* GPIOx,uint16_t pinNumber);
-//void MCAL_GPIO_RESET_PORT(GPIO_REG_t* GPIOx);
+void MCAL_GPIO_SET_PORT(GPIO_REG_t* GPIOx);
+void MCAL_GPIO_RESET_PORT(GPIO_REG_t* GPIOx);
 //void MCAL_GPIO_LCK_PORT(GPIO_REG_t* GPIOx);
+
 #endif /* INC_STM32F103_C6_GPIO_DRIVER_H_ */

@@ -1,4 +1,4 @@
-main.c:28:6:waiting	24	static
-main.c:36:6:enable_clock	4	static
-main.c:41:6:GPIO_init	16	static
-main.c:65:5:main	8	static
+../Src/main.c:39:6:clks	4	static
+../Src/main.c:47:6:SPI_IRQ_CallBack	16	static
+../Src/main.c:59:6:UART_IRQ_CallBack	4	static
+../Src/main.c:71:5:main	8	static

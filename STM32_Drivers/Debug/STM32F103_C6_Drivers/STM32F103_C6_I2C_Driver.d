@@ -1,0 +1,2 @@
+STM32F103_C6_Drivers/STM32F103_C6_I2C_Driver.o: \
+ ../STM32F103_C6_Drivers/STM32F103_C6_I2C_Driver.c

@@ -18,69 +18,124 @@
  */
 
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
-  #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+#warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
 
 
 #include"STM_C6_Driver.h"
 #include"STM32F103_C6_GPIO_Driver.h"
+#include"STM32F103_C6_EXTI_Driver.h"
+#include"STM32F103_C6_UART_Driver.h"
+#include"STM32F103_C6_SPI_Driver.h"
 
-void waiting(int x){
-	unsigned int i , j;
+//#define SPI_Master
+#define SPI_Slave
 
-	for(i =0;i<x;i++){
-		for(j=0;j<500;j++);
-	}
-}
+SPI_Config_t SPI_Cnfg;
+USART_CONFG_t USART1_Cnfg;
+GPIO_Pin_init_t Pincnfg;
+uint16_t data;
 
-void enable_clock(){
+void clks(void)
+{
 	ENB_PORTA();
+	ENB_AFIO();
 	ENB_PORTB();
 }
 
-void GPIO_init(){
 
-	GPIO_Pin_init_t PinCnfg;
+void SPI_IRQ_CallBack(struct S_IRQ_SRC SPI_IRQ)
+{
+#ifdef SPI_Slave
+	if(SPI_IRQ.RXNE)
+	{
+		data = 0xf;
+		MCAL_SPI_TX_RX(SPI1, &data, Disable_SPI);
+		MCAL_UART_TX(USART1, &data, Enable_UART);
+	}
+#endif
+}
 
-	PinCnfg.PIN_NUM = PIN_NUM__1;
-	PinCnfg.PIN_MODE = GPIO_MODE_FLOATING_IP;
-	MCAL_GPIO_INIT(GPIOA, &PinCnfg);
+void UART_IRQ_CallBack(void)
+{
+#ifdef SPI_Master
+	MCAL_UART_RX(USART1, &data, Disable_UART);
+	MCAL_UART_TX(USART1, &data, Enable_UART);
+	MCAL_GPIO_WRITE_PIN(GPIOA, PIN_NUM__4, 0);
+	MCAL_SPI_TX_RX(SPI1, &data, Enable_SPI);
+	MCAL_GPIO_WRITE_PIN(GPIOA, PIN_NUM__4, 1);
+#endif
 
-	PinCnfg.PIN_NUM = PIN_NUM__13;
-	PinCnfg.PIN_MODE = GPIO_MODE_FLOATING_IP;
-	MCAL_GPIO_INIT(GPIOA, &PinCnfg);
-
-	PinCnfg.PIN_NUM = PIN_NUM__1;
-	PinCnfg.PIN_MODE = GPIO_MODE_PUSH_PULL_OP;
-	PinCnfg.PIN_SPEED = GPIO_MODE_SPEED_10M;
-	MCAL_GPIO_INIT(GPIOB, &PinCnfg);
-
-
-	PinCnfg.PIN_NUM = PIN_NUM__13;
-	PinCnfg.PIN_MODE = GPIO_MODE_PUSH_PULL_OP;
-	PinCnfg.PIN_SPEED = GPIO_MODE_SPEED_10M;
-	MCAL_GPIO_INIT(GPIOB, &PinCnfg);
 }
 
 int main(void)
 {
-	enable_clock();
-	GPIO_init();
+	clks();
+	//========================UART Init=========================
+	/*
+	 *UART1_TX 	PA9
+	 *UART1_RX 	PA10
+	 *UART1_CTS PA11
+	 *UART1_RTS PA12
+	 */
+	USART1_Cnfg.USART_MODE = USART_MODE_TX_RX;
+	USART1_Cnfg.USART_BAUDRATE = USART_BAUDRATE_115200;
+	USART1_Cnfg.USART_BITs = USART_BITs_8;
+	USART1_Cnfg.USART_HW_FLW_CTL = USART_HwFlowCNTL_NONE;
+	USART1_Cnfg.USART_IRQ = USART_IRQ_Enable_RXNEIE;
+	USART1_Cnfg.USART_PARITYBIT = USART_PARITY_NONE;
+	USART1_Cnfg.USART_STOPBIT = USART_STOP_BITs_1;
+	USART1_Cnfg.P_IRQ_CallBack = UART_IRQ_CallBack;
 
-	while(1){
+	MCAL_UART_Init(USART1, &USART1_Cnfg);
+	MCAL_UART_GPIO_Init(USART1);
 
-		if( MCAL_GPIO_READ_PIN(GPIOA, PIN_NUM__1) == 0 ){
-			MCAL_GPIO_TOGGLE_PIN(GPIOB, PIN_NUM__1);
-			while( MCAL_GPIO_READ_PIN(GPIOA, PIN_NUM__1) == 0);
-		}
+	//=======================SPI Init============================
+	/*
+	 *SPI1_NSS 	PA4
+	 *SPI1_SCK 	PA5
+	 *SPI1_MISO PA6
+	 *SPI1_MOSI PA7
+	 */
 
-		if( MCAL_GPIO_READ_PIN(GPIOA, PIN_NUM__13) == 1 ){
-			MCAL_GPIO_TOGGLE_PIN(GPIOB, PIN_NUM__13);
-		}
+	SPI_Cnfg.SPI_ClkPhase = SPI_ClkPhase_1EDGE;
+	SPI_Cnfg.SPI_ClkPolarity = SPI_ClkPolarity_Idle_High;
+	SPI_Cnfg.SPI_DataSize = SPI_DataSize_8bit;
+	SPI_Cnfg.SPI_FrameFormat = SPI_FrameFormat_MSB;
+	SPI_Cnfg.SPI_Communication_Mode = SPI_Communication_FullDuplex_2Line_Mode;
+	SPI_Cnfg.SPI_BaudRate = SPI_BaudRate_PRESCAL_8;
 
-		waiting(1);
+#ifdef SPI_Master
+	SPI_Cnfg.SPI_Device_Mode = SPI_Master_Mode;
+	SPI_Cnfg.SPI_IRQ_Enable = SPI_IRQ_Enable_NONE;
+	SPI_Cnfg.SPI_NSS_Mode = SPI_NSS_SW_Set;
+	SPI_Cnfg.P_IRQ_CallBack = NULL;
+
+	//=======================SS Init===========================
+	Pincnfg.PIN_MODE 	= GPIO_MODE_PUSH_PULL_OP;
+	Pincnfg.PIN_NUM 	= PIN_NUM__4;
+	Pincnfg.PIN_SPEED 	= GPIO_MODE_SPEED_10M;
+	MCAL_GPIO_INIT(GPIOA, &Pincnfg);
+
+	//Force the slave select pin (High) Idle Mode
+	MCAL_GPIO_WRITE_PIN(GPIOA, PIN_NUM__4, 1);
+
+#endif
+
+
+#ifdef SPI_Slave
+	SPI_Cnfg.SPI_Device_Mode = SPI_Slave_Mode;
+	SPI_Cnfg.SPI_IRQ_Enable = SPI_IRQ_Enable_RXNEIE;
+	SPI_Cnfg.SPI_NSS_Mode = SPI_NSS_HW_Slave;
+	SPI_Cnfg.P_IRQ_CallBack = SPI_IRQ_CallBack;
+#endif
+
+	MCAL_SPI_Init(&SPI_Cnfg, SPI1);
+	MCAL_SPI_GPIO_Init(SPI1);
+
+	while(1)
+	{
+
 	}
 
-
 }
-
